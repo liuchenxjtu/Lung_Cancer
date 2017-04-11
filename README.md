@@ -1,4 +1,6 @@
+modify header of candidates to uid,x,y,z,diam
 # Data Science Bowl 2017
+
 
 ## Description
 

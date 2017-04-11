@@ -54,7 +54,7 @@ class ChunkLoader():
         # self.ndata = self.nvids * self.chunks_per_vid
         if not test_mode:
             self.labels = pd.read_csv(os.path.join(self.repo_dir, 'labels.csv'))
-            self.nega_labels = pd.read_csv(os.path.join(self.repo_dir, 'candidates.csv'))
+            self.nega_labels = pd.read_csv(os.path.join(self.repo_dir, 'candidates_V2.csv'))
         else:
             self.labels = None
             # Host buffers for macrobatch data and targets
@@ -179,7 +179,7 @@ class ChunkLoader():
     def extract_one(self, data, data_shape, uid_data,idx):
         # assert uid_data.shape[0] != 0
         if not self.test_mode:
-                rand = np.random.randint(8)
+                # rand = np.random.randint(8)
                 # Could be a real nodule or a negative sample selected from
                 # possible candidates
                 # i = np.random.randint(uid_data.shape[0])
@@ -204,7 +204,7 @@ class ChunkLoader():
             #     high[j] = min(data_shape[j] - self.chunk_size, high[j])
             #     low[j] = min(low[j], high[j] - 1)
             # Jitter the location of this chunk
-            start = [np.random.randint(low=low[i], high=high[i]) for i in range(3)]
+                start = [np.random.randint(low=low[i], high=high[i]) for i in range(3)]
         else:
             start = self.generate_chunk_start(chunk_idx, data_shape)
 
