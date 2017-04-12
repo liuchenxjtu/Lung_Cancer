@@ -1,5 +1,6 @@
 1. check read data from dicom and mhd
 2. match the coordinates
+candidates and exclude, xyz,yzx 反着
 2. lung segmentation
 3. add locations to chunks
 4. use chunk prediction scores
