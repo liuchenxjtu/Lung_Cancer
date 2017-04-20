@@ -28,7 +28,6 @@ import functools
 import multiprocessing
 from scipy import ndimage
 from glob import glob
-
 import settings
 import video
 import mask
