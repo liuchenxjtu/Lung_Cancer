@@ -6,3 +6,54 @@ candidates and exclude, xyz,zyx 反着
 3. add locations to chunks
 4. use chunk prediction scores
 5. rewrite caffe part
+
+
+
+
+
+questions:
+if any(center)<chunk_size, high may <0
+the points from sick users will be marked as 1 no matter the labels in labels.csv
+
+
+
+
+
+
+Hello, here a very quick 1st summary on my part our 2nd place solution. Of course a real writeup and code will follow.
+
+Tools.
+I used Keras + Tensorflow on windows 64. It just came out and wanted to give it a go. For visualisation + debugging I used a specially built viewer. I used that one for checking labels, predictions etc.
+
+General approach.
+The main insight for me (and as a coincidence Daniel) was to use the malignancy information from the LIDC database as labeled by the doctors and combine it with the LUNA16 negative labels. I trained up a 32x32x32 3d convnet to detect nodules AND predict malignancy in one go. I did not use segmented lungs but rather trained on the full images to not miss any nodules located near the edges.
+
+Furthermore it was appearantly extremely important you not let yourself get too distracted by the leaderboard. As Daniel said "In CV we trust".
+
+Preprocessing
+Scale everything to 1x1x1 mm. Make sure that all patients have the same orientation in both LUNA and NDSB. Connect the LIDC data to the LUNA data. I expressed all coordinates as 0.0 to 1.0 so that it was scale independent. I used my viewer to check if all positive and negative labels.
+
+Labels
+I used ALL positive LIDC doctor assessments as positive, malignancy label info. Even when only one doctor saw something. The though was that the malignancy info was still very valuable. Then I used the negative entries of candidatesv2.csv from LUNA16 as negatives labels. Note that some overlapped with nodules that were tagged by only one doctor. To train on the full images I samples extra negative labels on non-lung tissue. I found that tissue by taking the segmenter from the forum and sampling around the mask edges. Then I trained a first network and predicted on the LUNA set. All false positives I added as extra negative examples. All in all ca. 400.000 candidates, 100.000 non lung tissue, 10.000 false positives, 2000 LIDC positives.
+
+For my 2nd model I predicted on the NDSB data and then played "doctor julian" and manually annotated positive nodules and false positives and added those to the trainset.
+
+Another important observation was that in LUNA16 nodules > 3cm (masses) were NOT labeled. So I excluded negative labels that overlapped these masses since it migt confuse the network.
+
+3D convnet nodule, malignancy detector.
+I trained a 32x32x32 3D convnet on extracted, labeled crops . The architecture was a butchered version of the C3D architecture, which is basically VGG like. I spent very (too?) little time optimizing the network architecture.
+
+Somehow I made it so to do multitask learning. So I trained on Nodule Y/N, Malignancy in one go. This worked best for me but Daniel did it in 2 stages.
+
+The labels were very unbalanced so I upsampled the positive cases onto 1:20. Heavy (lossless) augmentation somehow worked. I'm still a bit surprised how few positive cases were needed.
+
+Using the trained network I prediced on the NDSB data using a 12 mm stepsize which gave a lattice with nodule malignancies. For every patient I only used the max malignancy and the z-location. I did this at 3 zoom levels to also be able to detect bigger nodules.
+
+Strange tissue detector.
+A small part of the solution was a "strange tissue" detector. I basically used some examples of strange tissue from LUNA, NDSB, a few axamples from the extra data thread. I labeled them with the same program I used for the 2nd NDSB. Then I trained a small U-Net. This net gave per patient the amount of strange tissue. I also tried the same trick for overal holistic info and empysema but they did not have any significant impact.
+
+Final classifier.
+I used Xgboost on the max malignancy at 3 zoom levels, the z-location and the amount of strange tissue. I used min-childweight of 60 to prevent overfitting. Local CV was around 0.39 but the LB had a will of its own and I had a very hard time finding improvements that improved both local CV and LB.
+
+Daniels models.
+I joined with Daniel Hammack and we both were convinced we had an original idea. Turned out that we both used malignancy info from LIDC. However, his network architecture was 64x64x64, resnet like and used 2 stages. Also he used extra nodule info from LIDC. So in the end our models were still quite complimentary. More info on his stuff will be in his writeup. My strategy was to average the models into one final solution.
