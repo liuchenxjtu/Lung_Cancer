@@ -1,21 +1,3 @@
-#
-#   Copyright 2017 Anil Thomas
-#
-#   Licensed under the Apache License, Version 2.0 (the "License");
-#   you may not use this file except in compliance with the License.
-#   You may obtain a copy of the License at
-#
-#       http://www.apache.org/licenses/LICENSE-2.0
-#
-#   Unless required by applicable law or agreed to in writing, software
-#   distributed under the License is distributed on an "AS IS" BASIS,
-#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#   See the License for the specific language governing permissions and
-#   limitations under the License.
-#
-"""
-Data loader that can be iterated over to retrieve minibatches
-"""
 import logging
 import numpy as np
 import pandas as pd
@@ -38,92 +20,27 @@ class ChunkLoader():
         self.chunk_shape = (self.chunk_size, self.chunk_size, self.chunk_size)
         self.chunk_volume = np.prod(self.chunk_shape)
         self.metadata = pd.read_csv(os.path.join(self.repo_dir, set_name + '-metadata.csv'))
+        self.data_size = self.metadata.shape[0]
+        self.pos_users = self.metadata[self.metadata['flag']==1]['uid']
+        self.neg_users = self.metadata[self.metadata['flag']==0]['uid']
         self.nvids = self.metadata.shape[0]
         self.chunks_filled = 0
-        # Load this many videos at a time
-        # self.vids_per_macrobatch = 128
-        # Extract this many chunks from each video
-        # if not test_mode:
-        #     self.chunks_per_vid = 128
-        # else:
-        #     self.chunks_per_vid = settings.chunks_per_dim ** 3
-        # self.macrobatch_offset = 0
-        # self.chunks_left_in_macrobatch = 0
-        # self.macrobatch_size = self.vids_per_macrobatch * self.chunks_per_vid
-
-        # self.ndata = self.nvids * self.chunks_per_vid
+        self.video_idx = 0
         if not test_mode:
             self.labels = pd.read_csv(os.path.join(self.repo_dir, 'labels.csv'))
-            self.nega_labels = pd.read_csv(os.path.join(self.repo_dir, 'candidates_V2.csv'))
+            self.nega_labels = pd.read_csv(os.path.join(self.repo_dir, 'candidates.csv'))
         else:
             self.labels = None
-            # Host buffers for macrobatch data and targets
-        self.data = np.empty((self.macrobatch_size, self.chunk_volume), dtype=datum_dtype)
-        self.targets = np.empty((self.macrobatch_size, nclasses), dtype=np.float32)
-        self.starts = np.empty((self.macrobatch_size, 3), dtype=datum_dtype)
-        # self.minibatch_data = np.empty((self.bsz, self.chunk_volume), dtype=datum_dtype)
-        # self.minibatch_targets = np.empty((self.bsz, nclasses), dtype=np.float32)
-        # self.minibatch_starts = np.empty((self.bsz, 3), dtype=datum_dtype)
         self.test_mode = test_mode
         self.chunks,self.starts,self.targets = [],[],[]
-
-        # self.chunk_count = 0
-        # self.shape = (1, self.chunk_size, self.chunk_size, self.chunk_size)
-
-        self.transform_buffer = np.empty(self.chunk_shape, dtype=datum_dtype)
-        # Device buffers for minibatch data and targets
-        # self.dev_data = self.be.empty((self.chunk_volume, self.bsz), dtype=self.be.default_dtype)
-        # self.dev_targets = self.be.empty((nclasses, self.bsz), dtype=self.be.default_dtype)
-        # self.dev_starts = self.be.empty((3, self.bsz), dtype=self.be.default_dtype)
+        ##positive points in lables.csv
+        self.pos_labels = self.labels[self.labels['uid'].isin(self.pos_users)].shape[0]
+        self.pos_neg_ratio = 6.0
+        self.chunk_from_neg_users = int(self.pos_labels*self.pos_neg_ratio/len(self.neg_users))
         self.current_uid = self.current_flag = self.current_meta = None
 
     def reset(self):
-        # self.start_idx = 0
-        # self.video_idx = 0
         self.chunks,self.starts,self.targets = [],[],[]
-
-    def next_macrobatch(self):
-        curr_idx = 0
-        self.targets[:] = 0
-        self.starts[:] = 0
-        for idx in range(self.vids_per_macrobatch):
-            vid_data = self.next_video()
-            # self.chunk_count = self.chunks_per_vid
-            # self.extract_chunks(vid_data, curr_idx, self.chunks_per_vid)
-            self.extract_chunks(vid_data, curr_idx)
-            curr_idx += self.chunks_per_vid
-            self.chunks_filled += self.chunks_per_vid
-        self.chunks_left_in_macrobatch = self.macrobatch_size
-        if self.is_training:
-            self.shuffle(self.data, self.targets, self.starts)
-
-    def next_minibatch(self, start):
-        end = min(start + self.bsz, self.ndata)
-        if end == self.ndata:
-            self.start_idx = self.bsz - (self.ndata - start)
-
-        if self.chunks_left_in_macrobatch == 0:
-            self.next_macrobatch()
-            self.macrobatch_offset = 0
-
-        start = self.macrobatch_offset
-        end = start + self.bsz
-
-        uid = self.metadata.iloc[int(self.macrobatch_offset / self.chunks_per_vid)]['uid']
-        # flag = self.metadata.iloc[int(self.macrobatch_offset / self.chunks_per_vid)]['flag']
-        # print uid, flag
-
-        self.minibatch_data[:] = self.data[start:end]
-        self.minibatch_targets[:] = self.targets[start:end]
-        self.minibatch_starts[:] = self.starts[start:end]
-        self.dev_data[:] = self.minibatch_data.T.copy()
-        self.dev_data[:] = self.dev_data / 255.
-        self.dev_targets[:] = self.minibatch_targets.T.copy()
-        self.dev_starts[:] = self.minibatch_starts.T.copy()
-        self.macrobatch_offset += self.bsz
-        self.chunks_left_in_macrobatch -= self.bsz
-        return uid, self.dev_data, self.dev_targets, self.dev_starts
-
     def next_video(self,video_idx):
         self.reset()
         self.current_meta = self.metadata.iloc[video_idx]
@@ -136,53 +53,20 @@ class ChunkLoader():
                      int(self.current_meta['x_len']))
         vid_data = video.read_blp(data_filename, vid_shape)
         self.video_idx += 1
-        chunks,starts,targets = self.extract_chunks(vid_data)
+        self.extract_chunks(vid_data)
 
 
-        return chunks,starts,targets
+        return self.chunks,self.starts,self.targets
 
-    @property
-    # def nbatches(self):
-    #     return -((self.start_idx - self.ndata) // self.bsz)
-
-    def __iter__(self):
-        for start in range( self.nvids):
-            yield self.next_video(start)
-
-    def transform(self, vid):
-        rand1 = np.random.randint(18)
-        rand2 = np.random.randint(12)
-        if rand1 == 0:
-            vid = vid.transpose((0, 2, 1))
-        elif rand1 == 1:
-            vid = vid.transpose((1, 0, 2))
-        elif rand1 == 2:
-            vid = vid.transpose((1, 2, 0))
-        elif rand1 == 3:
-            vid = vid.transpose((2, 0, 1))
-        elif rand1 == 4:
-            vid = vid.transpose((2, 1, 0))
-
-        if rand2 == 0:
-            vid = vid[::-1]
-        elif rand2 == 1:
-            vid = vid[:, ::-1]
-        elif rand2 == 2:
-            vid = vid[:, :, ::-1]
-        return vid
 
     def slice_chunk(self, start, data):
         return data[start[0]:start[0] + self.chunk_size,
                start[1]:start[1] + self.chunk_size,
-               start[2]:start[2] + self.chunk_size].ravel()
+               start[2]:start[2] + self.chunk_size]#.ravel()
 
     def extract_one(self, data, data_shape, uid_data,idx):
         # assert uid_data.shape[0] != 0
         if not self.test_mode:
-                # rand = np.random.randint(8)
-                # Could be a real nodule or a negative sample selected from
-                # possible candidates
-                # i = np.random.randint(uid_data.shape[0])
                 center = np.array((uid_data['z'].iloc[idx],
                                    uid_data['y'].iloc[idx],
                                    uid_data['x'].iloc[idx]), dtype=np.int32)
@@ -190,36 +74,23 @@ class ChunkLoader():
                 rad = 0.5 * uid_data['diam'].iloc[idx]
                 if rad == 0:
                     # Assign an arbitrary radius to candidate nodules
-                    rad = 24 / settings.resolution
+                    rad = 20 / settings.resolution
+
+                #comment by lc: low may <0
                 low = np.int32(center + rad - self.chunk_size)
                 high = np.int32(center - rad)
-            # else:
-            #     # Let in a random negative sample
-            #     low = np.zeros(3, dtype=np.int32)
-            #     high = np.int32(low + data_shape - self.chunk_size)
-
-            # for j in range(3):
-            #     low[j] = max(0, low[j])
-            #     high[j] = max(low[j] + 1, high[j])
-            #     high[j] = min(data_shape[j] - self.chunk_size, high[j])
-            #     low[j] = min(low[j], high[j] - 1)
-            # Jitter the location of this chunk
+                for j in range(3):
+                    low[j] = max(0, low[j])
+                    high[j] = max(low[j] + 1, high[j])
+                    high[j] = min(data_shape[j] - self.chunk_size, high[j])
+                    low[j] = min(low[j], high[j] - 1)
                 start = [np.random.randint(low=low[i], high=high[i]) for i in range(3)]
         else:
             start = self.generate_chunk_start(chunk_idx, data_shape)
 
+
         chunk = self.slice_chunk(start, data)
 
-        # self.starts[cur_idx + chunk_idx] = start
-
-        # if self.current_flag != -1:
-        #     self.targets[cur_idx + chunk_idx, self.current_flag] = 1
-
-        # if self.augment:
-        #     self.transform_buffer[:] = chunk.reshape(self.transform_buffer.shape)
-        #     self.data[cur_idx + chunk_idx] = self.transform(self.transform_buffer).ravel()
-        # else:
-        #     self.data[cur_idx + chunk_idx] = chunk
         return chunk,start
 
     def generate_chunk_start(self, chunk_idx, data_shape):
@@ -235,33 +106,23 @@ class ChunkLoader():
         return start
 
     def extract_chunks(self, data):
-        # meta = self.current_meta
         data_shape = np.array(data.shape, dtype=np.int32)
-        # uid = meta['uid']
-        # uid_data = self.labels[self.labels['uid'] == uid]
-        if not self.test_mode:
-            uid_data = self.labels[self.labels['uid'] == self.current_uid]
-
-        else:
-            uid_data = None
         if self.current_flag:
             uid_data = self.labels[self.labels['uid'] == self.current_uid]
             for idx in range(uid_data.shape[0]):
                 chunk,start = self.extract_one(data, data_shape, uid_data, idx)
+                if chunk is None:
+                    continue
                 self.chunks.append(chunk)
                 self.starts.append(start)
                 self.targets.append(1)
         else:
             uid_data = self.nega_labels[self.nega_labels['uid'] == self.current_uid]
-            for idx in range(uid_data.shape[0]):
+            for i in range(min(self.chunk_from_neg_users,uid_data.shape[0])):
+                idx = np.random.randint(uid_data.shape[0])
                 chunk,start = self.extract_one(data, data_shape, uid_data, idx)
+                if chunk is None:
+                    continue
                 self.chunks.append(chunk)
                 self.starts.append(start)
                 self.targets.append(0)
-
-    def shuffle(self, data, targets, starts):
-        inds = np.arange(self.data.shape[0])
-        np.random.shuffle(inds)
-        data[:] = data[inds]
-        targets[:] = targets[inds]
-        starts[:] = starts[inds]
