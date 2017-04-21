@@ -117,12 +117,23 @@ class ChunkLoader():
                 self.starts.append(start)
                 self.targets.append(1)
         else:
-            uid_data = self.nega_labels[self.nega_labels['uid'] == self.current_uid]
-            for i in range(min(self.chunk_from_neg_users,uid_data.shape[0])):
-                idx = np.random.randint(uid_data.shape[0])
+            uid_data = self.labels[self.labels['uid'] == self.current_uid]
+            for idx in range(min(self.chunk_from_neg_users,uid_data.shape[0])):
                 chunk,start = self.extract_one(data, data_shape, uid_data, idx)
                 if chunk is None:
                     continue
                 self.chunks.append(chunk)
                 self.starts.append(start)
                 self.targets.append(0)
+            ## not enough negative from labels, then to candidates
+            if uid_data.shape[0]<self.chunk_from_neg_users:
+                left_chunk = self.chunk_from_neg_users-uid_data.shape[0]
+                uid_data = self.nega_labels[self.nega_labels['uid'] == self.current_uid]
+                for i in range(min(left_chunk,uid_data.shape[0])):
+                    idx = np.random.randint(uid_data.shape[0])
+                    chunk,start = self.extract_one(data, data_shape, uid_data, idx)
+                    if chunk is None:
+                        continue
+                    self.chunks.append(chunk)
+                    self.starts.append(start)
+                    self.targets.append(0)
