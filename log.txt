@@ -1,0 +1,3458 @@
+Namespace(batchSize=10, clip=10, cuda=True, lr=0.001, momentum=0.9, nEpochs=60, pretrained='', resume='', start_epoch=1, step=15, testBatchSize=10, threads=4, weight_decay=0.0001)
+('Random Seed: ', 505)
+===> Loading datasets
+===> Building model
+===> Setting GPU
+===> Setting Optimizer
+===> Training
+epoch = 1 lr = 0.001
+===> Epoch[1](100/3203): Loss: 4.5473985672
+total gradient 10.0000125862
+===> Epoch[1](200/3203): Loss: 0.3374643922
+total gradient 10.0000050065
+===> Epoch[1](300/3203): Loss: 0.8235321045
+total gradient 10.0000105174
+===> Epoch[1](400/3203): Loss: 1.5311756134
+total gradient 10.0000335669
+===> Epoch[1](500/3203): Loss: 0.2667913139
+total gradient 7.07941997874
+===> Epoch[1](600/3203): Loss: 0.6184566617
+total gradient 10.0000159399
+===> Epoch[1](700/3203): Loss: 0.2512117326
+total gradient 4.2777134532
+===> Epoch[1](800/3203): Loss: 0.4912830889
+total gradient 10.0000082115
+===> Epoch[1](900/3203): Loss: 0.4160045683
+total gradient 8.44514813781
+===> Epoch[1](1000/3203): Loss: 0.3353155255
+total gradient 5.44840701681
+===> Epoch[1](1100/3203): Loss: 0.4917342067
+total gradient 7.399986877
+===> Epoch[1](1200/3203): Loss: 0.3632899821
+total gradient 4.2294370002
+===> Epoch[1](1300/3203): Loss: 0.2781494558
+total gradient 4.04581026821
+===> Epoch[1](1400/3203): Loss: 0.4482277036
+total gradient 5.72927784958
+===> Epoch[1](1500/3203): Loss: 0.5310080051
+total gradient 6.91020091864
+===> Epoch[1](1600/3203): Loss: 0.5487903357
+total gradient 6.89284433365
+===> Epoch[1](1700/3203): Loss: 0.1791503280
+total gradient 3.1293068168
+===> Epoch[1](1800/3203): Loss: 0.4855779707
+total gradient 3.03369294761
+===> Epoch[1](1900/3203): Loss: 0.3692200780
+total gradient 5.1452237269
+===> Epoch[1](2000/3203): Loss: 0.6418629885
+total gradient 6.40813078978
+===> Epoch[1](2100/3203): Loss: 0.3541477323
+total gradient 4.09127005409
+===> Epoch[1](2200/3203): Loss: 0.3763168454
+total gradient 3.70142979653
+===> Epoch[1](2300/3203): Loss: 0.8665637970
+total gradient 9.24670891843
+===> Epoch[1](2400/3203): Loss: 0.5519612432
+total gradient 4.62529008688
+===> Epoch[1](2500/3203): Loss: 0.1743733883
+total gradient 2.52056111694
+===> Epoch[1](2600/3203): Loss: 0.1835345924
+total gradient 2.3236624482
+===> Epoch[1](2700/3203): Loss: 0.1501548886
+total gradient 2.26815491012
+===> Epoch[1](2800/3203): Loss: 0.3449625373
+total gradient 2.58000258567
+===> Epoch[1](2900/3203): Loss: 0.1648130119
+total gradient 2.298574782
+===> Epoch[1](3000/3203): Loss: 0.4191251695
+total gradient 3.77642463148
+===> Epoch[1](3100/3203): Loss: 0.1459927857
+total gradient 2.48022980512
+===> Epoch[1](3200/3203): Loss: 0.8902047873
+total gradient 9.64363622963
+
+Test set: Average loss: 0.4101, Accuracy: 6799/7950 (86%)
+
+Checkpoint saved to model/model_epoch_1.pth
+epoch = 2 lr = 0.001
+===> Epoch[2](100/3203): Loss: 0.3029820323
+total gradient 4.00270710859
+===> Epoch[2](200/3203): Loss: 0.1661389768
+total gradient 2.39373126344
+===> Epoch[2](300/3203): Loss: 0.6293751001
+total gradient 7.2625175845
+===> Epoch[2](400/3203): Loss: 0.3796167970
+total gradient 3.96912575839
+===> Epoch[2](500/3203): Loss: 0.3775067925
+total gradient 4.20885994723
+===> Epoch[2](600/3203): Loss: 0.2590501606
+total gradient 2.74706972752
+===> Epoch[2](700/3203): Loss: 0.9310455322
+total gradient 7.70159397787
+===> Epoch[2](800/3203): Loss: 0.3437266946
+total gradient 2.2395727781
+===> Epoch[2](900/3203): Loss: 0.6746726036
+total gradient 6.16369018347
+===> Epoch[2](1000/3203): Loss: 0.2103703469
+total gradient 2.44625653339
+===> Epoch[2](1100/3203): Loss: 0.7198391557
+total gradient 4.58997006899
+===> Epoch[2](1200/3203): Loss: 0.3096945286
+total gradient 2.97977791852
+===> Epoch[2](1300/3203): Loss: 0.3058282733
+total gradient 2.34430875019
+===> Epoch[2](1400/3203): Loss: 0.5083829165
+total gradient 1.96929546532
+===> Epoch[2](1500/3203): Loss: 0.2212075889
+total gradient 2.59490699388
+===> Epoch[2](1600/3203): Loss: 0.3910557330
+total gradient 2.84045445407
+===> Epoch[2](1700/3203): Loss: 0.4105370939
+total gradient 3.33392473047
+===> Epoch[2](1800/3203): Loss: 0.7291709185
+total gradient 8.48827878833
+===> Epoch[2](1900/3203): Loss: 0.6919163465
+total gradient 6.21295685183
+===> Epoch[2](2000/3203): Loss: 0.2914772928
+total gradient 2.56582431796
+===> Epoch[2](2100/3203): Loss: 0.3251922131
+total gradient 2.49547835398
+===> Epoch[2](2200/3203): Loss: 0.7107472420
+total gradient 5.18410133363
+===> Epoch[2](2300/3203): Loss: 0.2483210117
+total gradient 2.12531966281
+===> Epoch[2](2400/3203): Loss: 0.3113920689
+total gradient 3.37241566292
+===> Epoch[2](2500/3203): Loss: 0.5949913859
+total gradient 3.91949625614
+===> Epoch[2](2600/3203): Loss: 0.2701079249
+total gradient 2.05676867296
+===> Epoch[2](2700/3203): Loss: 0.1409163177
+total gradient 1.72551842399
+===> Epoch[2](2800/3203): Loss: 0.2182972729
+total gradient 2.43857861894
+===> Epoch[2](2900/3203): Loss: 0.3160655200
+total gradient 2.16133981086
+===> Epoch[2](3000/3203): Loss: 0.3790600300
+total gradient 2.08047465066
+===> Epoch[2](3100/3203): Loss: 0.5007959008
+total gradient 4.37459306203
+===> Epoch[2](3200/3203): Loss: 0.4605399072
+total gradient 3.99250488409
+
+Test set: Average loss: 0.4051, Accuracy: 6799/7950 (86%)
+
+Checkpoint saved to model/model_epoch_2.pth
+epoch = 3 lr = 0.001
+===> Epoch[3](100/3203): Loss: 0.4716259539
+total gradient 5.29435416222
+===> Epoch[3](200/3203): Loss: 0.3150842786
+total gradient 3.86607886604
+===> Epoch[3](300/3203): Loss: 0.3158814311
+total gradient 3.74584022555
+===> Epoch[3](400/3203): Loss: 0.5100407600
+total gradient 5.34746747455
+===> Epoch[3](500/3203): Loss: 0.3214495182
+total gradient 4.2526082167
+===> Epoch[3](600/3203): Loss: 0.3153733611
+total gradient 2.9447121486
+===> Epoch[3](700/3203): Loss: 0.5327678919
+total gradient 5.64617351025
+===> Epoch[3](800/3203): Loss: 0.1515360028
+total gradient 1.76366205972
+===> Epoch[3](900/3203): Loss: 0.2018597126
+total gradient 2.21896599623
+===> Epoch[3](1000/3203): Loss: 0.2684745491
+total gradient 2.13343795168
+===> Epoch[3](1100/3203): Loss: 0.2925523221
+total gradient 2.85707554671
+===> Epoch[3](1200/3203): Loss: 0.5755301714
+total gradient 5.76025199841
+===> Epoch[3](1300/3203): Loss: 0.3970240653
+total gradient 4.87078815584
+===> Epoch[3](1400/3203): Loss: 0.2550544441
+total gradient 2.00098994646
+===> Epoch[3](1500/3203): Loss: 0.6803188324
+total gradient 7.82974586909
+===> Epoch[3](1600/3203): Loss: 0.0821758956
+total gradient 1.5031273736
+===> Epoch[3](1700/3203): Loss: 0.3350387812
+total gradient 2.72323819476
+===> Epoch[3](1800/3203): Loss: 0.2825246453
+total gradient 2.45216321281
+===> Epoch[3](1900/3203): Loss: 0.2193850577
+total gradient 1.75769830338
+===> Epoch[3](2000/3203): Loss: 0.7781358957
+total gradient 7.00740295668
+===> Epoch[3](2100/3203): Loss: 0.4014338553
+total gradient 4.48905649956
+===> Epoch[3](2200/3203): Loss: 0.1879412681
+total gradient 2.13149947646
+===> Epoch[3](2300/3203): Loss: 0.3886534274
+total gradient 2.55772871319
+===> Epoch[3](2400/3203): Loss: 0.2507211268
+total gradient 3.00446238847
+===> Epoch[3](2500/3203): Loss: 0.4065880775
+total gradient 3.54376978141
+===> Epoch[3](2600/3203): Loss: 0.2631746829
+total gradient 3.51305881619
+===> Epoch[3](2700/3203): Loss: 0.4234115481
+total gradient 4.16806856481
+===> Epoch[3](2800/3203): Loss: 0.4753046632
+total gradient 2.7638320505
+===> Epoch[3](2900/3203): Loss: 0.7020325065
+total gradient 7.43531761255
+===> Epoch[3](3000/3203): Loss: 0.2267720252
+total gradient 1.79472629998
+===> Epoch[3](3100/3203): Loss: 0.2626273632
+total gradient 3.6875340016
+===> Epoch[3](3200/3203): Loss: 0.2299957275
+total gradient 3.39586042351
+
+Test set: Average loss: 0.3966, Accuracy: 6799/7950 (86%)
+
+Checkpoint saved to model/model_epoch_3.pth
+epoch = 4 lr = 0.001
+===> Epoch[4](100/3203): Loss: 0.1415596604
+total gradient 2.09694598735
+===> Epoch[4](200/3203): Loss: 0.0951441675
+total gradient 1.49612661496
+===> Epoch[4](300/3203): Loss: 0.6963143349
+total gradient 7.4736751438
+===> Epoch[4](400/3203): Loss: 0.6291705370
+total gradient 5.45854180632
+===> Epoch[4](500/3203): Loss: 0.7836837769
+total gradient 10.0000272592
+===> Epoch[4](600/3203): Loss: 0.6546196342
+total gradient 6.4919630604
+===> Epoch[4](700/3203): Loss: 0.1661851704
+total gradient 2.1367309815
+===> Epoch[4](800/3203): Loss: 0.6734234691
+total gradient 5.85296856154
+===> Epoch[4](900/3203): Loss: 0.2971135676
+total gradient 3.52287789144
+===> Epoch[4](1000/3203): Loss: 0.4361761212
+total gradient 4.18161566521
+===> Epoch[4](1100/3203): Loss: 0.1628687680
+total gradient 2.8043787594
+===> Epoch[4](1200/3203): Loss: 0.2080599070
+total gradient 2.47180965326
+===> Epoch[4](1300/3203): Loss: 0.3559443355
+total gradient 3.15008370033
+===> Epoch[4](1400/3203): Loss: 0.3858951032
+total gradient 4.49870092595
+===> Epoch[4](1500/3203): Loss: 0.4821417332
+total gradient 8.1463635102
+===> Epoch[4](1600/3203): Loss: 0.2619877756
+total gradient 3.26420924998
+===> Epoch[4](1700/3203): Loss: 0.4974049628
+total gradient 5.08114257665
+===> Epoch[4](1800/3203): Loss: 0.6742950082
+total gradient 6.28016936763
+===> Epoch[4](1900/3203): Loss: 0.5607031584
+total gradient 3.76135263154
+===> Epoch[4](2000/3203): Loss: 0.5041257739
+total gradient 5.94799417751
+===> Epoch[4](2100/3203): Loss: 0.0972635299
+total gradient 1.85350226844
+===> Epoch[4](2200/3203): Loss: 0.0777271539
+total gradient 1.73151442266
+===> Epoch[4](2300/3203): Loss: 0.1272926033
+total gradient 2.02864083301
+===> Epoch[4](2400/3203): Loss: 0.3862207830
+total gradient 2.35162485057
+===> Epoch[4](2500/3203): Loss: 0.1489719301
+total gradient 2.43600741017
+===> Epoch[4](2600/3203): Loss: 0.2172543257
+total gradient 3.24378771347
+===> Epoch[4](2700/3203): Loss: 0.1177156195
+total gradient 2.40914969704
+===> Epoch[4](2800/3203): Loss: 0.3088404238
+total gradient 4.53881615801
+===> Epoch[4](2900/3203): Loss: 0.4045156837
+total gradient 3.80846025421
+===> Epoch[4](3000/3203): Loss: 0.1202419251
+total gradient 1.77826283755
+===> Epoch[4](3100/3203): Loss: 0.7059121132
+total gradient 7.62858817388
+===> Epoch[4](3200/3203): Loss: 0.1451788694
+total gradient 2.91502797776
+
+Test set: Average loss: 0.4022, Accuracy: 6813/7950 (86%)
+
+Checkpoint saved to model/model_epoch_4.pth
+epoch = 5 lr = 0.001
+===> Epoch[5](100/3203): Loss: 0.2503128648
+total gradient 3.49106556778
+===> Epoch[5](200/3203): Loss: 0.0775498003
+total gradient 1.9375279803
+===> Epoch[5](300/3203): Loss: 0.4244422913
+total gradient 5.75330374355
+===> Epoch[5](400/3203): Loss: 0.4876224101
+total gradient 6.20128079783
+===> Epoch[5](500/3203): Loss: 0.5673360825
+total gradient 10.0000218532
+===> Epoch[5](600/3203): Loss: 0.2797324359
+total gradient 3.44565263113
+===> Epoch[5](700/3203): Loss: 0.3829530776
+total gradient 3.58730332886
+===> Epoch[5](800/3203): Loss: 0.3243651092
+total gradient 5.64680240211
+===> Epoch[5](900/3203): Loss: 0.4024817348
+total gradient 4.41674919622
+===> Epoch[5](1000/3203): Loss: 0.4386526644
+total gradient 6.041430203
+===> Epoch[5](1100/3203): Loss: 0.4372612536
+total gradient 4.26427221273
+===> Epoch[5](1200/3203): Loss: 0.3425267339
+total gradient 4.57143226487
+===> Epoch[5](1300/3203): Loss: 0.4389973283
+total gradient 6.4929811851
+===> Epoch[5](1400/3203): Loss: 0.3890534937
+total gradient 3.33528206111
+===> Epoch[5](1500/3203): Loss: 0.2383478582
+total gradient 2.77732655056
+===> Epoch[5](1600/3203): Loss: 0.0900442377
+total gradient 1.92182164759
+===> Epoch[5](1700/3203): Loss: 0.3294190764
+total gradient 4.03766663317
+===> Epoch[5](1800/3203): Loss: 0.1286649406
+total gradient 2.01694413167
+===> Epoch[5](1900/3203): Loss: 0.4347606599
+total gradient 7.11826329364
+===> Epoch[5](2000/3203): Loss: 0.2743349969
+total gradient 3.37034282783
+===> Epoch[5](2100/3203): Loss: 0.2551134229
+total gradient 3.94031113923
+===> Epoch[5](2200/3203): Loss: 0.3112201393
+total gradient 4.57537839854
+===> Epoch[5](2300/3203): Loss: 0.2522078454
+total gradient 5.03630175331
+===> Epoch[5](2400/3203): Loss: 0.4140147269
+total gradient 7.53131608911
+===> Epoch[5](2500/3203): Loss: 0.1257029772
+total gradient 1.96637690735
+===> Epoch[5](2600/3203): Loss: 0.6992893219
+total gradient 9.27737188073
+===> Epoch[5](2700/3203): Loss: 0.3101761043
+total gradient 3.25802068774
+===> Epoch[5](2800/3203): Loss: 0.2416879684
+total gradient 2.69225623908
+===> Epoch[5](2900/3203): Loss: 0.4845407009
+total gradient 9.31534982528
+===> Epoch[5](3000/3203): Loss: 0.2657320797
+total gradient 3.66227164662
+===> Epoch[5](3100/3203): Loss: 0.4319846034
+total gradient 7.92203523452
+===> Epoch[5](3200/3203): Loss: 0.1386364996
+total gradient 2.70981927037
+
+Test set: Average loss: 0.3978, Accuracy: 6749/7950 (85%)
+
+Checkpoint saved to model/model_epoch_5.pth
+epoch = 6 lr = 0.001
+===> Epoch[6](100/3203): Loss: 0.3606782854
+total gradient 6.38629688344
+===> Epoch[6](200/3203): Loss: 0.6241405606
+total gradient 6.85378027295
+===> Epoch[6](300/3203): Loss: 0.1151333600
+total gradient 2.27905744252
+===> Epoch[6](400/3203): Loss: 0.4861130714
+total gradient 5.80176572703
+===> Epoch[6](500/3203): Loss: 0.5442532301
+total gradient 6.08683741473
+===> Epoch[6](600/3203): Loss: 0.6671379805
+total gradient 9.58498421877
+===> Epoch[6](700/3203): Loss: 0.2571267486
+total gradient 3.36425194856
+===> Epoch[6](800/3203): Loss: 0.3142145574
+total gradient 3.71239345413
+===> Epoch[6](900/3203): Loss: 0.4894075990
+total gradient 8.08874625059
+===> Epoch[6](1000/3203): Loss: 0.3483898044
+total gradient 6.59797166784
+===> Epoch[6](1100/3203): Loss: 0.0929184780
+total gradient 1.68619825128
+===> Epoch[6](1200/3203): Loss: 0.1491638571
+total gradient 3.05147203362
+===> Epoch[6](1300/3203): Loss: 0.6291640997
+total gradient 6.24848213721
+===> Epoch[6](1400/3203): Loss: 0.4117856920
+total gradient 6.93233851182
+===> Epoch[6](1500/3203): Loss: 0.2695030570
+total gradient 4.30420064926
+===> Epoch[6](1600/3203): Loss: 0.2312319726
+total gradient 3.57513142868
+===> Epoch[6](1700/3203): Loss: 0.0886070356
+total gradient 1.98680326072
+===> Epoch[6](1800/3203): Loss: 0.1612327844
+total gradient 4.03313053308
+===> Epoch[6](1900/3203): Loss: 0.1793800294
+total gradient 5.62021837014
+===> Epoch[6](2000/3203): Loss: 0.3357547224
+total gradient 3.67381634756
+===> Epoch[6](2100/3203): Loss: 0.4295038283
+total gradient 6.80598817771
+===> Epoch[6](2200/3203): Loss: 0.6388696432
+total gradient 5.93419383554
+===> Epoch[6](2300/3203): Loss: 0.6304090619
+total gradient 7.65716899479
+===> Epoch[6](2400/3203): Loss: 0.3393929303
+total gradient 4.54460512555
+===> Epoch[6](2500/3203): Loss: 0.2536975741
+total gradient 4.03286265096
+===> Epoch[6](2600/3203): Loss: 0.3653616607
+total gradient 4.65691081562
+===> Epoch[6](2700/3203): Loss: 0.5555308461
+total gradient 6.54770675277
+===> Epoch[6](2800/3203): Loss: 0.5302906036
+total gradient 6.44017746844
+===> Epoch[6](2900/3203): Loss: 0.2395964861
+total gradient 3.09577061798
+===> Epoch[6](3000/3203): Loss: 0.3425719738
+total gradient 4.32738035772
+===> Epoch[6](3100/3203): Loss: 0.2258761227
+total gradient 2.75051847432
+===> Epoch[6](3200/3203): Loss: 0.1959038228
+total gradient 3.14501910334
+
+Test set: Average loss: 0.4019, Accuracy: 6711/7950 (84%)
+
+Checkpoint saved to model/model_epoch_6.pth
+epoch = 7 lr = 0.001
+===> Epoch[7](100/3203): Loss: 0.3380140364
+total gradient 6.75394729056
+===> Epoch[7](200/3203): Loss: 0.3177224100
+total gradient 7.08567510771
+===> Epoch[7](300/3203): Loss: 0.5699522495
+total gradient 8.89504492287
+===> Epoch[7](400/3203): Loss: 0.7352625132
+total gradient 9.57531086884
+===> Epoch[7](500/3203): Loss: 0.1626032442
+total gradient 4.62516883768
+===> Epoch[7](600/3203): Loss: 0.1436334401
+total gradient 2.58600024535
+===> Epoch[7](700/3203): Loss: 0.6564109921
+total gradient 10.0000130152
+===> Epoch[7](800/3203): Loss: 0.1895797551
+total gradient 4.12515264167
+===> Epoch[7](900/3203): Loss: 0.3266730905
+total gradient 8.62698853388
+===> Epoch[7](1000/3203): Loss: 0.3497374952
+total gradient 7.41642139264
+===> Epoch[7](1100/3203): Loss: 0.3087990880
+total gradient 4.3985410058
+===> Epoch[7](1200/3203): Loss: 0.5203493834
+total gradient 9.87159922132
+===> Epoch[7](1300/3203): Loss: 0.0311602708
+total gradient 1.27252500985
+===> Epoch[7](1400/3203): Loss: 0.1508361697
+total gradient 2.99925105086
+===> Epoch[7](1500/3203): Loss: 0.4551822543
+total gradient 7.78574961537
+===> Epoch[7](1600/3203): Loss: 0.1864010692
+total gradient 3.64096829446
+===> Epoch[7](1700/3203): Loss: 0.0738783628
+total gradient 1.71862010014
+===> Epoch[7](1800/3203): Loss: 0.3450382352
+total gradient 3.9931963449
+===> Epoch[7](1900/3203): Loss: 0.2098671943
+total gradient 6.85756059811
+===> Epoch[7](2000/3203): Loss: 0.6108427048
+total gradient 9.16526191907
+===> Epoch[7](2100/3203): Loss: 0.6313017011
+total gradient 7.71321678001
+===> Epoch[7](2200/3203): Loss: 0.4090082645
+total gradient 6.05462814315
+===> Epoch[7](2300/3203): Loss: 0.3529904485
+total gradient 5.08817990538
+===> Epoch[7](2400/3203): Loss: 0.3417572081
+total gradient 5.27355975093
+===> Epoch[7](2500/3203): Loss: 0.1770354807
+total gradient 2.98577453993
+===> Epoch[7](2600/3203): Loss: 0.3132557869
+total gradient 3.64667756381
+===> Epoch[7](2700/3203): Loss: 0.2791896462
+total gradient 3.9750199097
+===> Epoch[7](2800/3203): Loss: 0.4847255349
+total gradient 4.58606565379
+===> Epoch[7](2900/3203): Loss: 0.2408791780
+total gradient 4.44437007944
+===> Epoch[7](3000/3203): Loss: 0.7801501155
+total gradient 10.000025104
+===> Epoch[7](3100/3203): Loss: 0.6553816795
+total gradient 9.1106919546
+===> Epoch[7](3200/3203): Loss: 0.1426704079
+total gradient 2.97094314903
+
+Test set: Average loss: 0.4341, Accuracy: 6505/7950 (82%)
+
+Checkpoint saved to model/model_epoch_7.pth
+epoch = 8 lr = 0.001
+===> Epoch[8](100/3203): Loss: 0.4084714055
+total gradient 7.37238198346
+===> Epoch[8](200/3203): Loss: 0.0726285577
+total gradient 2.17979480018
+===> Epoch[8](300/3203): Loss: 0.5020467043
+total gradient 9.0749710543
+===> Epoch[8](400/3203): Loss: 0.2886928618
+total gradient 9.24317386151
+===> Epoch[8](500/3203): Loss: 1.0153017044
+total gradient 10.0000257327
+===> Epoch[8](600/3203): Loss: 0.0833378881
+total gradient 3.75920351651
+===> Epoch[8](700/3203): Loss: 0.2628308535
+total gradient 4.0071266268
+===> Epoch[8](800/3203): Loss: 0.2762091756
+total gradient 7.74833361113
+===> Epoch[8](900/3203): Loss: 0.4714915156
+total gradient 9.95314601388
+===> Epoch[8](1000/3203): Loss: 0.4831500649
+total gradient 10.0000112571
+===> Epoch[8](1100/3203): Loss: 0.4137389064
+total gradient 7.7443249743
+===> Epoch[8](1200/3203): Loss: 0.2544750571
+total gradient 4.57510079273
+===> Epoch[8](1300/3203): Loss: 0.1942750216
+total gradient 4.19223864815
+===> Epoch[8](1400/3203): Loss: 0.3480693102
+total gradient 7.50417809375
+===> Epoch[8](1500/3203): Loss: 0.0860153139
+total gradient 3.78054763355
+===> Epoch[8](1600/3203): Loss: 0.4308251739
+total gradient 7.14068772797
+===> Epoch[8](1700/3203): Loss: 0.1917592585
+total gradient 4.82782939761
+===> Epoch[8](1800/3203): Loss: 0.2488604039
+total gradient 4.66785416483
+===> Epoch[8](1900/3203): Loss: 0.3598646522
+total gradient 6.27274418654
+===> Epoch[8](2000/3203): Loss: 0.0575229935
+total gradient 2.20131515749
+===> Epoch[8](2100/3203): Loss: 0.1670017540
+total gradient 5.01705558288
+===> Epoch[8](2200/3203): Loss: 0.2385703772
+total gradient 3.24235085491
+===> Epoch[8](2300/3203): Loss: 1.0482712984
+total gradient 10.0000310909
+===> Epoch[8](2400/3203): Loss: 0.0848322585
+total gradient 2.33061073083
+===> Epoch[8](2500/3203): Loss: 0.2348420620
+total gradient 4.00277821391
+===> Epoch[8](2600/3203): Loss: 0.1621114910
+total gradient 3.34064147217
+===> Epoch[8](2700/3203): Loss: 0.0103894826
+total gradient 0.575878054354
+===> Epoch[8](2800/3203): Loss: 0.5035785437
+total gradient 8.74636507661
+===> Epoch[8](2900/3203): Loss: 0.1320232004
+total gradient 2.68557629664
+===> Epoch[8](3000/3203): Loss: 0.2813194096
+total gradient 6.01591862334
+===> Epoch[8](3100/3203): Loss: 0.3006163538
+total gradient 6.10056660813
+===> Epoch[8](3200/3203): Loss: 0.3770899177
+total gradient 6.20302813777
+
+Test set: Average loss: 0.4169, Accuracy: 6694/7950 (84%)
+
+Checkpoint saved to model/model_epoch_8.pth
+epoch = 9 lr = 0.001
+===> Epoch[9](100/3203): Loss: 0.1852070540
+total gradient 3.47849513111
+===> Epoch[9](200/3203): Loss: 0.0996944159
+total gradient 3.54671781179
+===> Epoch[9](300/3203): Loss: 0.1861540675
+total gradient 5.475863179
+===> Epoch[9](400/3203): Loss: 0.6343950629
+total gradient 8.18158985297
+===> Epoch[9](500/3203): Loss: 0.3292836249
+total gradient 9.50920098342
+===> Epoch[9](600/3203): Loss: 0.9543399811
+total gradient 10.0000355216
+===> Epoch[9](700/3203): Loss: 0.2145535946
+total gradient 7.7748142863
+===> Epoch[9](800/3203): Loss: 0.4203719497
+total gradient 9.11470750563
+===> Epoch[9](900/3203): Loss: 0.3217718005
+total gradient 9.3730187615
+===> Epoch[9](1000/3203): Loss: 0.2977949977
+total gradient 4.58340904064
+===> Epoch[9](1100/3203): Loss: 0.1111179814
+total gradient 4.60461194359
+===> Epoch[9](1200/3203): Loss: 0.1216195002
+total gradient 3.79348438442
+===> Epoch[9](1300/3203): Loss: 0.2163246572
+total gradient 5.3954024018
+===> Epoch[9](1400/3203): Loss: 0.4395526052
+total gradient 9.73715317326
+===> Epoch[9](1500/3203): Loss: 0.1879334301
+total gradient 6.77452402518
+===> Epoch[9](1600/3203): Loss: 0.1358716786
+total gradient 5.30310670341
+===> Epoch[9](1700/3203): Loss: 0.4921523631
+total gradient 9.83370210597
+===> Epoch[9](1800/3203): Loss: 0.4128697813
+total gradient 9.26457364094
+===> Epoch[9](1900/3203): Loss: 0.3126435280
+total gradient 7.68737339742
+===> Epoch[9](2000/3203): Loss: 0.3222482204
+total gradient 10.0000006777
+===> Epoch[9](2100/3203): Loss: 0.2040937692
+total gradient 5.05589926941
+===> Epoch[9](2200/3203): Loss: 0.1012115702
+total gradient 4.05358741741
+===> Epoch[9](2300/3203): Loss: 0.1506773382
+total gradient 3.90858904488
+===> Epoch[9](2400/3203): Loss: 0.1740671843
+total gradient 4.52315203557
+===> Epoch[9](2500/3203): Loss: 0.3074961007
+total gradient 7.45044846615
+===> Epoch[9](2600/3203): Loss: 0.1277768165
+total gradient 3.43462348578
+===> Epoch[9](2700/3203): Loss: 0.4447022974
+total gradient 10.000008269
+===> Epoch[9](2800/3203): Loss: 0.1647489667
+total gradient 7.25213067817
+===> Epoch[9](2900/3203): Loss: 0.4061598778
+total gradient 10.0000042193
+===> Epoch[9](3000/3203): Loss: 0.3860126138
+total gradient 9.99999823724
+===> Epoch[9](3100/3203): Loss: 0.0667597875
+total gradient 2.15580032175
+===> Epoch[9](3200/3203): Loss: 0.3732520044
+total gradient 5.79768659129
+
+Test set: Average loss: 0.4671, Accuracy: 6530/7950 (82%)
+
+Checkpoint saved to model/model_epoch_9.pth
+epoch = 10 lr = 0.001
+===> Epoch[10](100/3203): Loss: 0.2023737729
+total gradient 7.37724790316
+===> Epoch[10](200/3203): Loss: 0.0842239112
+total gradient 3.01822399449
+===> Epoch[10](300/3203): Loss: 0.2983723879
+total gradient 7.23081814515
+===> Epoch[10](400/3203): Loss: 0.5586268306
+total gradient 10.0000260623
+===> Epoch[10](500/3203): Loss: 0.5901631117
+total gradient 10.0000124485
+===> Epoch[10](600/3203): Loss: 0.3470014632
+total gradient 10.0000057794
+===> Epoch[10](700/3203): Loss: 0.1773830950
+total gradient 5.19377743645
+===> Epoch[10](800/3203): Loss: 0.3029290140
+total gradient 9.99999698945
+===> Epoch[10](900/3203): Loss: 0.0523774736
+total gradient 3.02124110188
+===> Epoch[10](1000/3203): Loss: 0.2120028734
+total gradient 8.46515231215
+===> Epoch[10](1100/3203): Loss: 0.1114113182
+total gradient 4.09813905137
+===> Epoch[10](1200/3203): Loss: 0.2404228449
+total gradient 9.50530555453
+===> Epoch[10](1300/3203): Loss: 0.1253657788
+total gradient 5.6836526956
+===> Epoch[10](1400/3203): Loss: 0.4615249634
+total gradient 10.0000082595
+===> Epoch[10](1500/3203): Loss: 0.0164524559
+total gradient 1.29335301829
+===> Epoch[10](1600/3203): Loss: 0.1749631017
+total gradient 5.47109535892
+===> Epoch[10](1700/3203): Loss: 0.2401951104
+total gradient 7.07757619499
+===> Epoch[10](1800/3203): Loss: 0.3832786083
+total gradient 9.47251195156
+===> Epoch[10](1900/3203): Loss: 0.3609803319
+total gradient 9.24707826247
+===> Epoch[10](2000/3203): Loss: 0.1913679242
+total gradient 5.57113230283
+===> Epoch[10](2100/3203): Loss: 0.0881377608
+total gradient 5.01001817349
+===> Epoch[10](2200/3203): Loss: 0.2794679999
+total gradient 6.34629956727
+===> Epoch[10](2300/3203): Loss: 0.0485255010
+total gradient 1.68211611725
+===> Epoch[10](2400/3203): Loss: 0.2023879737
+total gradient 6.21663348121
+===> Epoch[10](2500/3203): Loss: 0.4066928029
+total gradient 7.54344079899
+===> Epoch[10](2600/3203): Loss: 0.0523255840
+total gradient 2.36204781645
+===> Epoch[10](2700/3203): Loss: 0.1221788302
+total gradient 4.31402961057
+===> Epoch[10](2800/3203): Loss: 0.0113182543
+total gradient 0.436468614073
+===> Epoch[10](2900/3203): Loss: 0.2133586705
+total gradient 6.87804196179
+===> Epoch[10](3000/3203): Loss: 0.1819518507
+total gradient 3.56193591933
+===> Epoch[10](3100/3203): Loss: 0.7506574988
+total gradient 10.0000290131
+===> Epoch[10](3200/3203): Loss: 0.1761111766
+total gradient 7.29031084046
+
+Test set: Average loss: 0.4688, Accuracy: 6459/7950 (81%)
+
+Checkpoint saved to model/model_epoch_10.pth
+epoch = 11 lr = 0.001
+===> Epoch[11](100/3203): Loss: 0.2998244166
+total gradient 9.99999418831
+===> Epoch[11](200/3203): Loss: 0.2571803331
+total gradient 8.69838968241
+===> Epoch[11](300/3203): Loss: 0.3384022713
+total gradient 10.0000051062
+===> Epoch[11](400/3203): Loss: 0.2195630074
+total gradient 9.99999849693
+===> Epoch[11](500/3203): Loss: 0.5107780695
+total gradient 10.0000202458
+===> Epoch[11](600/3203): Loss: 0.1163272411
+total gradient 4.50128269038
+===> Epoch[11](700/3203): Loss: 0.2352876663
+total gradient 10.0000031958
+===> Epoch[11](800/3203): Loss: 0.2137914598
+total gradient 6.26423324
+===> Epoch[11](900/3203): Loss: 0.2333337367
+total gradient 10.0000043818
+===> Epoch[11](1000/3203): Loss: 0.2675437331
+total gradient 8.05352607289
+===> Epoch[11](1100/3203): Loss: 0.2076685727
+total gradient 10.000008524
+===> Epoch[11](1200/3203): Loss: 0.0585289486
+total gradient 2.85172467623
+===> Epoch[11](1300/3203): Loss: 0.2495409548
+total gradient 9.96493032126
+===> Epoch[11](1400/3203): Loss: 0.2597754598
+total gradient 10.0000035978
+===> Epoch[11](1500/3203): Loss: 0.1882193238
+total gradient 9.99999758624
+===> Epoch[11](1600/3203): Loss: 0.2375293523
+total gradient 10.0000015712
+===> Epoch[11](1700/3203): Loss: 0.1097438559
+total gradient 10.0000041449
+===> Epoch[11](1800/3203): Loss: 0.2229397744
+total gradient 7.72717833564
+===> Epoch[11](1900/3203): Loss: 0.4274029732
+total gradient 10.0000067229
+===> Epoch[11](2000/3203): Loss: 0.2086860687
+total gradient 5.33712422306
+===> Epoch[11](2100/3203): Loss: 0.3018306494
+total gradient 10.0000065074
+===> Epoch[11](2200/3203): Loss: 0.1512438655
+total gradient 8.6371320606
+===> Epoch[11](2300/3203): Loss: 0.2474923432
+total gradient 6.76605940118
+===> Epoch[11](2400/3203): Loss: 0.1378563643
+total gradient 5.00837353927
+===> Epoch[11](2500/3203): Loss: 0.3307312131
+total gradient 6.17667074664
+===> Epoch[11](2600/3203): Loss: 0.3193851411
+total gradient 9.49874542595
+===> Epoch[11](2700/3203): Loss: 0.8787471056
+total gradient 10.0000175219
+===> Epoch[11](2800/3203): Loss: 0.5078693628
+total gradient 10.0000078233
+===> Epoch[11](2900/3203): Loss: 0.3211026192
+total gradient 10.0000003993
+===> Epoch[11](3000/3203): Loss: 0.3828023076
+total gradient 9.99999849053
+===> Epoch[11](3100/3203): Loss: 0.1412580162
+total gradient 4.88815668208
+===> Epoch[11](3200/3203): Loss: 0.8599184155
+total gradient 10.0000170948
+
+Test set: Average loss: 0.6596, Accuracy: 6330/7950 (80%)
+
+Checkpoint saved to model/model_epoch_11.pth
+epoch = 12 lr = 0.001
+===> Epoch[12](100/3203): Loss: 0.0585434847
+total gradient 4.3192538933
+===> Epoch[12](200/3203): Loss: 0.3567028344
+total gradient 10.000006405
+===> Epoch[12](300/3203): Loss: 0.2244966924
+total gradient 9.99999638981
+===> Epoch[12](400/3203): Loss: 0.0234080441
+total gradient 2.035074395
+===> Epoch[12](500/3203): Loss: 0.0858741924
+total gradient 8.40943532004
+===> Epoch[12](600/3203): Loss: 0.0168330781
+total gradient 1.43811582396
+===> Epoch[12](700/3203): Loss: 0.1033161879
+total gradient 5.75469490137
+===> Epoch[12](800/3203): Loss: 0.0910490751
+total gradient 9.99999731618
+===> Epoch[12](900/3203): Loss: 0.1448065490
+total gradient 9.05380476036
+===> Epoch[12](1000/3203): Loss: 0.2155379802
+total gradient 9.99999897961
+===> Epoch[12](1100/3203): Loss: 0.1229029149
+total gradient 6.23380038336
+===> Epoch[12](1200/3203): Loss: 0.0513789244
+total gradient 2.47663182229
+===> Epoch[12](1300/3203): Loss: 0.5846570134
+total gradient 10.0000121718
+===> Epoch[12](1400/3203): Loss: 0.4671380520
+total gradient 10.0000110628
+===> Epoch[12](1500/3203): Loss: 0.4487300813
+total gradient 10.0000147248
+===> Epoch[12](1600/3203): Loss: 0.5855538249
+total gradient 10.0000103865
+===> Epoch[12](1700/3203): Loss: 0.2026005685
+total gradient 10.0000005934
+===> Epoch[12](1800/3203): Loss: 0.3209987283
+total gradient 10.0000058711
+===> Epoch[12](1900/3203): Loss: 0.2008120120
+total gradient 10.0000067377
+===> Epoch[12](2000/3203): Loss: 0.1226398349
+total gradient 6.52474919875
+===> Epoch[12](2100/3203): Loss: 0.0105356574
+total gradient 0.958079526364
+===> Epoch[12](2200/3203): Loss: 0.1705076396
+total gradient 9.99999896917
+===> Epoch[12](2300/3203): Loss: 0.2080904990
+total gradient 10.0000018797
+===> Epoch[12](2400/3203): Loss: 0.0064234259
+total gradient 0.775914520398
+===> Epoch[12](2500/3203): Loss: 0.6152266860
+total gradient 10.000015018
+===> Epoch[12](2600/3203): Loss: 0.2522148788
+total gradient 10.0000035611
+===> Epoch[12](2700/3203): Loss: 0.1657111347
+total gradient 8.94695012907
+===> Epoch[12](2800/3203): Loss: 0.4304551184
+total gradient 8.91984307752
+===> Epoch[12](2900/3203): Loss: 0.1851888895
+total gradient 7.5861845884
+===> Epoch[12](3000/3203): Loss: 0.0805080310
+total gradient 4.57382675509
+===> Epoch[12](3100/3203): Loss: 0.3755874932
+total gradient 10.0000079361
+===> Epoch[12](3200/3203): Loss: 0.1398166865
+total gradient 5.77588138409
+
+Test set: Average loss: 0.8000, Accuracy: 6120/7950 (77%)
+
+Checkpoint saved to model/model_epoch_12.pth
+epoch = 13 lr = 0.001
+===> Epoch[13](100/3203): Loss: 0.2252698392
+total gradient 9.99999242701
+===> Epoch[13](200/3203): Loss: 0.1692180336
+total gradient 10.000002188
+===> Epoch[13](300/3203): Loss: 0.1258557290
+total gradient 7.48275145599
+===> Epoch[13](400/3203): Loss: 0.0527811944
+total gradient 7.09454115545
+===> Epoch[13](500/3203): Loss: 0.1303474158
+total gradient 9.05371275389
+===> Epoch[13](600/3203): Loss: 0.0969678611
+total gradient 9.93586097473
+===> Epoch[13](700/3203): Loss: 0.4007871151
+total gradient 10.0000067623
+===> Epoch[13](800/3203): Loss: 0.0673669577
+total gradient 7.7308943022
+===> Epoch[13](900/3203): Loss: 0.1890873909
+total gradient 9.99999631767
+===> Epoch[13](1000/3203): Loss: 0.0047031282
+total gradient 0.950744980288
+===> Epoch[13](1100/3203): Loss: 0.6320721507
+total gradient 10.0000195062
+===> Epoch[13](1200/3203): Loss: 0.1306717694
+total gradient 9.99999956779
+===> Epoch[13](1300/3203): Loss: 0.0996196270
+total gradient 10.0000016557
+===> Epoch[13](1400/3203): Loss: 0.0593776591
+total gradient 9.63256823722
+===> Epoch[13](1500/3203): Loss: 0.5913442373
+total gradient 10.0000077642
+===> Epoch[13](1600/3203): Loss: 0.2615522444
+total gradient 10.0000045455
+===> Epoch[13](1700/3203): Loss: 0.0748006403
+total gradient 7.8255329713
+===> Epoch[13](1800/3203): Loss: 0.0224852972
+total gradient 3.0697247915
+===> Epoch[13](1900/3203): Loss: 0.1440929919
+total gradient 9.84940333129
+===> Epoch[13](2000/3203): Loss: 0.0735380650
+total gradient 9.99999469723
+===> Epoch[13](2100/3203): Loss: 0.1851147562
+total gradient 4.52396352005
+===> Epoch[13](2200/3203): Loss: 0.2835788429
+total gradient 10.0000030753
+===> Epoch[13](2300/3203): Loss: 0.1200679913
+total gradient 7.26020225565
+===> Epoch[13](2400/3203): Loss: 0.0094775204
+total gradient 1.39655125953
+===> Epoch[13](2500/3203): Loss: 0.3289016187
+total gradient 10.0000097733
+===> Epoch[13](2600/3203): Loss: 0.3641282022
+total gradient 10.0000062977
+===> Epoch[13](2700/3203): Loss: 0.1306664646
+total gradient 9.36028598814
+===> Epoch[13](2800/3203): Loss: 0.2150405347
+total gradient 9.99999928185
+===> Epoch[13](2900/3203): Loss: 0.1174771562
+total gradient 8.97092874884
+===> Epoch[13](3000/3203): Loss: 0.0578668825
+total gradient 9.9999983612
+===> Epoch[13](3100/3203): Loss: 0.0545870364
+total gradient 4.3843273355
+===> Epoch[13](3200/3203): Loss: 0.1803065091
+total gradient 9.99999869008
+
+Test set: Average loss: 0.8046, Accuracy: 6265/7950 (79%)
+
+Checkpoint saved to model/model_epoch_13.pth
+epoch = 14 lr = 0.001
+===> Epoch[14](100/3203): Loss: 0.2099565566
+total gradient 10.0000019078
+===> Epoch[14](200/3203): Loss: 0.0499616973
+total gradient 9.12082652929
+===> Epoch[14](300/3203): Loss: 0.3173323572
+total gradient 10.0000080375
+===> Epoch[14](400/3203): Loss: 0.2649948001
+total gradient 10.0000102294
+===> Epoch[14](500/3203): Loss: 0.0257507153
+total gradient 5.96634983716
+===> Epoch[14](600/3203): Loss: 0.0390422419
+total gradient 7.6651847335
+===> Epoch[14](700/3203): Loss: 0.0053490279
+total gradient 0.883318018509
+===> Epoch[14](800/3203): Loss: 0.0066667916
+total gradient 1.01268102882
+===> Epoch[14](900/3203): Loss: 0.0804835260
+total gradient 5.88773266594
+===> Epoch[14](1000/3203): Loss: 0.0468797162
+total gradient 9.99999996307
+===> Epoch[14](1100/3203): Loss: 0.2256583273
+total gradient 9.7231805506
+===> Epoch[14](1200/3203): Loss: 0.1447228342
+total gradient 9.99999630545
+===> Epoch[14](1300/3203): Loss: 0.3688065112
+total gradient 10.0000148299
+===> Epoch[14](1400/3203): Loss: 0.1673143208
+total gradient 10.0000032982
+===> Epoch[14](1500/3203): Loss: 0.0190124866
+total gradient 1.88076900247
+===> Epoch[14](1600/3203): Loss: 0.0728092939
+total gradient 9.99999643867
+===> Epoch[14](1700/3203): Loss: 0.0229386147
+total gradient 8.11472721386
+===> Epoch[14](1800/3203): Loss: 0.0548918247
+total gradient 9.99999969107
+===> Epoch[14](1900/3203): Loss: 0.0263530724
+total gradient 5.70282800935
+===> Epoch[14](2000/3203): Loss: 0.0044458034
+total gradient 0.573433475003
+===> Epoch[14](2100/3203): Loss: 0.3995524943
+total gradient 10.0000068592
+===> Epoch[14](2200/3203): Loss: 0.1503233761
+total gradient 5.54265501001
+===> Epoch[14](2300/3203): Loss: 0.2602005601
+total gradient 10.0000063209
+===> Epoch[14](2400/3203): Loss: 0.5363402367
+total gradient 10.000010827
+===> Epoch[14](2500/3203): Loss: 0.0022275685
+total gradient 0.658343294616
+===> Epoch[14](2600/3203): Loss: 0.6449865103
+total gradient 10.0000162838
+===> Epoch[14](2700/3203): Loss: 0.1419434994
+total gradient 10.000003522
+===> Epoch[14](2800/3203): Loss: 0.2195752412
+total gradient 10.0000047227
+===> Epoch[14](2900/3203): Loss: 0.3932713866
+total gradient 10.0000129309
+===> Epoch[14](3000/3203): Loss: 0.2257140577
+total gradient 9.99999630302
+===> Epoch[14](3100/3203): Loss: 0.3298370540
+total gradient 10.0000052185
+===> Epoch[14](3200/3203): Loss: 0.0147298453
+total gradient 1.30114329565
+
+Test set: Average loss: 0.8725, Accuracy: 6365/7950 (80%)
+
+Checkpoint saved to model/model_epoch_14.pth
+epoch = 15 lr = 0.001
+===> Epoch[15](100/3203): Loss: 0.0049015759
+total gradient 0.723747104833
+===> Epoch[15](200/3203): Loss: 0.0635805503
+total gradient 9.32813401639
+===> Epoch[15](300/3203): Loss: 0.0189436190
+total gradient 6.89226379825
+===> Epoch[15](400/3203): Loss: 0.3100017011
+total gradient 10.0000063003
+===> Epoch[15](500/3203): Loss: 0.0005145312
+total gradient 0.0554503247388
+===> Epoch[15](600/3203): Loss: 0.0142919775
+total gradient 3.21079412817
+===> Epoch[15](700/3203): Loss: 0.0063556433
+total gradient 0.929006319462
+===> Epoch[15](800/3203): Loss: 0.0518017709
+total gradient 9.14894641483
+===> Epoch[15](900/3203): Loss: 0.1872189045
+total gradient 10.0000035871
+===> Epoch[15](1000/3203): Loss: 0.0111751314
+total gradient 1.77324944801
+===> Epoch[15](1100/3203): Loss: 0.0131029729
+total gradient 1.99173102713
+===> Epoch[15](1200/3203): Loss: 0.0855539888
+total gradient 9.9999979377
+===> Epoch[15](1300/3203): Loss: 0.2133744657
+total gradient 10.0000068382
+===> Epoch[15](1400/3203): Loss: 0.0624746569
+total gradient 9.99999891995
+===> Epoch[15](1500/3203): Loss: 0.0323070921
+total gradient 9.10795684111
+===> Epoch[15](1600/3203): Loss: 0.0001219511
+total gradient 0.0184622032638
+===> Epoch[15](1700/3203): Loss: 0.0336938128
+total gradient 6.18394915488
+===> Epoch[15](1800/3203): Loss: 0.0469494574
+total gradient 9.99999921393
+===> Epoch[15](1900/3203): Loss: 0.7127665281
+total gradient 10.0000119507
+===> Epoch[15](2000/3203): Loss: 0.0030857325
+total gradient 0.704586230903
+===> Epoch[15](2100/3203): Loss: 0.0335013270
+total gradient 5.26036447277
+===> Epoch[15](2200/3203): Loss: 0.0149379494
+total gradient 2.22946732471
+===> Epoch[15](2300/3203): Loss: 0.0057939766
+total gradient 0.799515860767
+===> Epoch[15](2400/3203): Loss: 0.0592888705
+total gradient 9.99999954209
+===> Epoch[15](2500/3203): Loss: 0.0422442183
+total gradient 8.11058861591
+===> Epoch[15](2600/3203): Loss: 0.0297407266
+total gradient 2.41628357207
+===> Epoch[15](2700/3203): Loss: 0.0133115649
+total gradient 3.4583400117
+===> Epoch[15](2800/3203): Loss: 0.0057184338
+total gradient 1.04053261998
+===> Epoch[15](2900/3203): Loss: 0.0049801706
+total gradient 0.812962250333
+===> Epoch[15](3000/3203): Loss: 0.0402404442
+total gradient 7.80236431027
+===> Epoch[15](3100/3203): Loss: 0.0349379405
+total gradient 2.18104481044
+===> Epoch[15](3200/3203): Loss: 0.2063265592
+total gradient 10.0000022319
+
+Test set: Average loss: 1.1664, Accuracy: 6380/7950 (80%)
+
+Checkpoint saved to model/model_epoch_15.pth
+epoch = 16 lr = 0.0001
+===> Epoch[16](100/3203): Loss: 0.0001817226
+total gradient 0.06177956561
+===> Epoch[16](200/3203): Loss: 0.0019511223
+total gradient 0.215173896601
+===> Epoch[16](300/3203): Loss: 0.0434866324
+total gradient 9.20869719186
+===> Epoch[16](400/3203): Loss: 0.0000824451
+total gradient 0.0194652174474
+===> Epoch[16](500/3203): Loss: 0.0141576882
+total gradient 2.85370814228
+===> Epoch[16](600/3203): Loss: 0.0092718843
+total gradient 4.95328455839
+===> Epoch[16](700/3203): Loss: 0.0028060197
+total gradient 0.265269065331
+===> Epoch[16](800/3203): Loss: 0.0152424574
+total gradient 1.52583223243
+===> Epoch[16](900/3203): Loss: 0.0631400719
+total gradient 5.93260230828
+===> Epoch[16](1000/3203): Loss: 0.0037291765
+total gradient 0.533900986493
+===> Epoch[16](1100/3203): Loss: 0.0812067166
+total gradient 5.01318786247
+===> Epoch[16](1200/3203): Loss: 0.0106439348
+total gradient 2.3075762812
+===> Epoch[16](1300/3203): Loss: 0.4727595747
+total gradient 10.0000064151
+===> Epoch[16](1400/3203): Loss: 0.0024712323
+total gradient 0.326374227917
+===> Epoch[16](1500/3203): Loss: 0.4808499813
+total gradient 10.0000086604
+===> Epoch[16](1600/3203): Loss: 0.0241047554
+total gradient 3.25816992998
+===> Epoch[16](1700/3203): Loss: 0.1018448472
+total gradient 6.59730863828
+===> Epoch[16](1800/3203): Loss: 0.0009933710
+total gradient 0.410700736606
+===> Epoch[16](1900/3203): Loss: 0.0025158166
+total gradient 0.276326106899
+===> Epoch[16](2000/3203): Loss: 0.0003922462
+total gradient 0.146111722839
+===> Epoch[16](2100/3203): Loss: 0.1702747047
+total gradient 10.0000101661
+===> Epoch[16](2200/3203): Loss: 0.0046367766
+total gradient 0.73833883977
+===> Epoch[16](2300/3203): Loss: 0.0038814545
+total gradient 1.05938127511
+===> Epoch[16](2400/3203): Loss: 0.0072192908
+total gradient 1.62362414497
+===> Epoch[16](2500/3203): Loss: 0.0265248902
+total gradient 8.74206068455
+===> Epoch[16](2600/3203): Loss: 0.0032000183
+total gradient 0.98139289953
+===> Epoch[16](2700/3203): Loss: 0.0017738342
+total gradient 0.333626794748
+===> Epoch[16](2800/3203): Loss: 0.0251944121
+total gradient 5.3864217712
+===> Epoch[16](2900/3203): Loss: 0.0000720024
+total gradient 0.0176806596268
+===> Epoch[16](3000/3203): Loss: 0.0026691437
+total gradient 0.617528058115
+===> Epoch[16](3100/3203): Loss: 0.0000397682
+total gradient 0.0121037671898
+===> Epoch[16](3200/3203): Loss: 0.0096731540
+total gradient 5.64317709076
+
+Test set: Average loss: 1.4381, Accuracy: 6321/7950 (80%)
+
+Checkpoint saved to model/model_epoch_16.pth
+epoch = 17 lr = 0.0001
+===> Epoch[17](100/3203): Loss: 0.0077868938
+total gradient 0.744434578545
+===> Epoch[17](200/3203): Loss: 0.0016039849
+total gradient 0.269532271714
+===> Epoch[17](300/3203): Loss: 0.0000005722
+total gradient 0.00703865683382
+===> Epoch[17](400/3203): Loss: 0.0026298643
+total gradient 0.354379285032
+===> Epoch[17](500/3203): Loss: 0.0002380848
+total gradient 0.0532976714277
+===> Epoch[17](600/3203): Loss: 0.0005957842
+total gradient 0.156638797379
+===> Epoch[17](700/3203): Loss: 0.0079597589
+total gradient 2.43370609058
+===> Epoch[17](800/3203): Loss: 0.0005541563
+total gradient 0.157524094471
+===> Epoch[17](900/3203): Loss: 0.0005475044
+total gradient 0.0698716325
+===> Epoch[17](1000/3203): Loss: 0.0137145398
+total gradient 2.15482291549
+===> Epoch[17](1100/3203): Loss: 0.2556293607
+total gradient 10.0000055299
+===> Epoch[17](1200/3203): Loss: 0.0093033668
+total gradient 1.77057688488
+===> Epoch[17](1300/3203): Loss: 0.0000822544
+total gradient 0.0267145129487
+===> Epoch[17](1400/3203): Loss: 0.1122054458
+total gradient 10.0000017234
+===> Epoch[17](1500/3203): Loss: 0.0031006932
+total gradient 1.24349333431
+===> Epoch[17](1600/3203): Loss: 0.0000209332
+total gradient 0.0135910424104
+===> Epoch[17](1700/3203): Loss: 0.0041578053
+total gradient 1.40056502563
+===> Epoch[17](1800/3203): Loss: 0.0021200895
+total gradient 0.233891441267
+===> Epoch[17](1900/3203): Loss: 0.0037733198
+total gradient 1.68862963218
+===> Epoch[17](2000/3203): Loss: 0.0012828112
+total gradient 0.153222293584
+===> Epoch[17](2100/3203): Loss: 0.0011673451
+total gradient 0.874349056652
+===> Epoch[17](2200/3203): Loss: 0.2230251729
+total gradient 10.0000053776
+===> Epoch[17](2300/3203): Loss: 0.0052056313
+total gradient 0.8634186675
+===> Epoch[17](2400/3203): Loss: 0.0010056018
+total gradient 0.164325745049
+===> Epoch[17](2500/3203): Loss: 0.0352229998
+total gradient 3.38186392405
+===> Epoch[17](2600/3203): Loss: 0.0007751941
+total gradient 0.167696232432
+===> Epoch[17](2700/3203): Loss: 0.0031059266
+total gradient 0.466341734047
+===> Epoch[17](2800/3203): Loss: 0.0671813712
+total gradient 10.0000023361
+===> Epoch[17](2900/3203): Loss: 0.0047717812
+total gradient 1.56002753904
+===> Epoch[17](3000/3203): Loss: 0.0004853964
+total gradient 0.101680907169
+===> Epoch[17](3100/3203): Loss: 0.0030588626
+total gradient 0.855754494612
+===> Epoch[17](3200/3203): Loss: 0.0042877076
+total gradient 0.536146715819
+
+Test set: Average loss: 1.6796, Accuracy: 6316/7950 (79%)
+
+Checkpoint saved to model/model_epoch_17.pth
+epoch = 18 lr = 0.0001
+===> Epoch[18](100/3203): Loss: 0.0007562876
+total gradient 0.19970427506
+===> Epoch[18](200/3203): Loss: 0.0000432968
+total gradient 0.0170566809422
+===> Epoch[18](300/3203): Loss: 0.0020331859
+total gradient 0.414329297412
+===> Epoch[18](400/3203): Loss: 0.0018854856
+total gradient 0.494827102761
+===> Epoch[18](500/3203): Loss: 0.0012232543
+total gradient 0.44104086272
+===> Epoch[18](600/3203): Loss: 0.0002720356
+total gradient 0.058555960875
+===> Epoch[18](700/3203): Loss: 0.0083196880
+total gradient 2.95167170949
+===> Epoch[18](800/3203): Loss: 0.0011442185
+total gradient 0.2694609605
+===> Epoch[18](900/3203): Loss: 0.0006107331
+total gradient 0.0979625626948
+===> Epoch[18](1000/3203): Loss: 0.0010983467
+total gradient 0.327831789082
+===> Epoch[18](1100/3203): Loss: 0.0211524256
+total gradient 3.62335558833
+===> Epoch[18](1200/3203): Loss: 0.0010237216
+total gradient 0.231649256285
+===> Epoch[18](1300/3203): Loss: 0.0002391338
+total gradient 0.0749239689186
+===> Epoch[18](1400/3203): Loss: 0.0026090145
+total gradient 0.542059380403
+===> Epoch[18](1500/3203): Loss: 0.0000020981
+total gradient 0.00705129775742
+===> Epoch[18](1600/3203): Loss: 0.0000826836
+total gradient 0.0269253653616
+===> Epoch[18](1700/3203): Loss: 0.0000250340
+total gradient 0.00844914212674
+===> Epoch[18](1800/3203): Loss: 0.0008562327
+total gradient 0.121847893625
+===> Epoch[18](1900/3203): Loss: 0.0015693664
+total gradient 0.330605500806
+===> Epoch[18](2000/3203): Loss: 0.0000441551
+total gradient 0.0211561706199
+===> Epoch[18](2100/3203): Loss: 0.0031877279
+total gradient 0.553396286329
+===> Epoch[18](2200/3203): Loss: 0.0016186715
+total gradient 0.232288578574
+===> Epoch[18](2300/3203): Loss: 0.0005177975
+total gradient 0.155599393021
+===> Epoch[18](2400/3203): Loss: 0.0013685226
+total gradient 0.734037488385
+===> Epoch[18](2500/3203): Loss: 0.0017167807
+total gradient 0.607962630234
+===> Epoch[18](2600/3203): Loss: 0.0015505552
+total gradient 0.606538176926
+===> Epoch[18](2700/3203): Loss: 0.0005082369
+total gradient 0.0975115130167
+===> Epoch[18](2800/3203): Loss: 0.0003819704
+total gradient 0.0734047579642
+===> Epoch[18](2900/3203): Loss: 0.0004070997
+total gradient 0.0531793146386
+===> Epoch[18](3000/3203): Loss: 0.0611891262
+total gradient 6.87296191589
+===> Epoch[18](3100/3203): Loss: 0.0210347064
+total gradient 1.93241480488
+===> Epoch[18](3200/3203): Loss: 0.0433527231
+total gradient 3.36663778853
+
+Test set: Average loss: 1.7581, Accuracy: 6307/7950 (79%)
+
+Checkpoint saved to model/model_epoch_18.pth
+epoch = 19 lr = 0.0001
+===> Epoch[19](100/3203): Loss: 0.0004244804
+total gradient 0.107867350149
+===> Epoch[19](200/3203): Loss: 0.0018007517
+total gradient 0.416133416653
+===> Epoch[19](300/3203): Loss: 0.0088945748
+total gradient 1.30431490808
+===> Epoch[19](400/3203): Loss: 0.0000427723
+total gradient 0.0116404662911
+===> Epoch[19](500/3203): Loss: 0.0032831668
+total gradient 0.563573800643
+===> Epoch[19](600/3203): Loss: 0.0015317916
+total gradient 0.358977430626
+===> Epoch[19](700/3203): Loss: 0.0001032114
+total gradient 0.0300295496049
+===> Epoch[19](800/3203): Loss: 0.0000439644
+total gradient 0.0114692473096
+===> Epoch[19](900/3203): Loss: 0.0049111964
+total gradient 1.85181265327
+===> Epoch[19](1000/3203): Loss: 0.0002599001
+total gradient 0.0677374301712
+===> Epoch[19](1100/3203): Loss: 0.0000463009
+total gradient 0.02636825277
+===> Epoch[19](1200/3203): Loss: 0.0148064969
+total gradient 4.42977027829
+===> Epoch[19](1300/3203): Loss: 0.0051903725
+total gradient 1.24937919883
+===> Epoch[19](1400/3203): Loss: 0.0196051784
+total gradient 5.64479102031
+===> Epoch[19](1500/3203): Loss: 0.0033933283
+total gradient 0.327338121472
+===> Epoch[19](1600/3203): Loss: 0.0008928060
+total gradient 0.154758881234
+===> Epoch[19](1700/3203): Loss: 0.0006953239
+total gradient 0.351493442316
+===> Epoch[19](1800/3203): Loss: 0.0009368897
+total gradient 0.384462113194
+===> Epoch[19](1900/3203): Loss: 0.0005201817
+total gradient 0.112402406201
+===> Epoch[19](2000/3203): Loss: 0.0213392191
+total gradient 2.31591392553
+===> Epoch[19](2100/3203): Loss: 0.0003796339
+total gradient 0.183827149346
+===> Epoch[19](2200/3203): Loss: 0.0000601292
+total gradient 0.0159144537829
+===> Epoch[19](2300/3203): Loss: 0.0003396273
+total gradient 0.0848324165721
+===> Epoch[19](2400/3203): Loss: 0.0043676374
+total gradient 0.928580690098
+===> Epoch[19](2500/3203): Loss: 0.0199832320
+total gradient 10.0000003991
+===> Epoch[19](2600/3203): Loss: 0.0000984907
+total gradient 0.018189764321
+===> Epoch[19](2700/3203): Loss: 0.0068462729
+total gradient 1.36237589282
+===> Epoch[19](2800/3203): Loss: 0.0075882673
+total gradient 1.1420933213
+===> Epoch[19](2900/3203): Loss: 0.0000069141
+total gradient 0.00731083133412
+===> Epoch[19](3000/3203): Loss: 0.0008705139
+total gradient 0.233549505762
+===> Epoch[19](3100/3203): Loss: 0.0021147369
+total gradient 1.48183878928
+===> Epoch[19](3200/3203): Loss: 0.0759675056
+total gradient 8.74027050209
+
+Test set: Average loss: 1.8860, Accuracy: 6301/7950 (79%)
+
+Checkpoint saved to model/model_epoch_19.pth
+epoch = 20 lr = 0.0001
+===> Epoch[20](100/3203): Loss: 0.0019695282
+total gradient 0.712847381111
+===> Epoch[20](200/3203): Loss: 0.0023144961
+total gradient 0.77238756078
+===> Epoch[20](300/3203): Loss: 0.0047176718
+total gradient 2.73923557383
+===> Epoch[20](400/3203): Loss: 0.0007169723
+total gradient 0.219132674597
+===> Epoch[20](500/3203): Loss: 0.0009895086
+total gradient 0.280808428085
+===> Epoch[20](600/3203): Loss: 0.0003109694
+total gradient 0.120711639227
+===> Epoch[20](700/3203): Loss: 0.0000025272
+total gradient 0.00709990128991
+===> Epoch[20](800/3203): Loss: 0.0000201702
+total gradient 0.00969608175143
+===> Epoch[20](900/3203): Loss: 0.0004500389
+total gradient 0.0980788599105
+===> Epoch[20](1000/3203): Loss: 0.0000159264
+total gradient 0.0077602500173
+===> Epoch[20](1100/3203): Loss: 0.0000123978
+total gradient 0.00839025225945
+===> Epoch[20](1200/3203): Loss: 0.0003568172
+total gradient 0.188489425473
+===> Epoch[20](1300/3203): Loss: 0.0003015995
+total gradient 0.0820022121883
+===> Epoch[20](1400/3203): Loss: 0.0015313625
+total gradient 0.57591484003
+===> Epoch[20](1500/3203): Loss: 0.0001230002
+total gradient 0.0410076995876
+===> Epoch[20](1600/3203): Loss: 0.0006251335
+total gradient 0.0910388770482
+===> Epoch[20](1700/3203): Loss: 0.0002471685
+total gradient 0.107030960682
+===> Epoch[20](1800/3203): Loss: 0.0001345873
+total gradient 0.0421814400153
+===> Epoch[20](1900/3203): Loss: 0.0024579526
+total gradient 0.773118918337
+===> Epoch[20](2000/3203): Loss: 0.0000508785
+total gradient 0.0136589764481
+===> Epoch[20](2100/3203): Loss: 0.0002192736
+total gradient 0.0496567505677
+===> Epoch[20](2200/3203): Loss: 0.0012731313
+total gradient 0.171329383134
+===> Epoch[20](2300/3203): Loss: 0.0000674963
+total gradient 0.0186775155069
+===> Epoch[20](2400/3203): Loss: 0.0022716522
+total gradient 0.82361346504
+===> Epoch[20](2500/3203): Loss: 0.0000866890
+total gradient 0.0293895635431
+===> Epoch[20](2600/3203): Loss: 0.0041754246
+total gradient 0.730559008826
+===> Epoch[20](2700/3203): Loss: 0.0003305435
+total gradient 0.050159368694
+===> Epoch[20](2800/3203): Loss: 0.0000143051
+total gradient 0.00912329512197
+===> Epoch[20](2900/3203): Loss: 0.0038586378
+total gradient 0.957483383711
+===> Epoch[20](3000/3203): Loss: 0.0002890587
+total gradient 0.239323627454
+===> Epoch[20](3100/3203): Loss: 0.0000920296
+total gradient 0.0665699164009
+===> Epoch[20](3200/3203): Loss: 0.0002127886
+total gradient 0.0635891951959
+
+Test set: Average loss: 2.0015, Accuracy: 6308/7950 (79%)
+
+Checkpoint saved to model/model_epoch_20.pth
+epoch = 21 lr = 0.0001
+===> Epoch[21](100/3203): Loss: 0.0006091356
+total gradient 0.207616068567
+===> Epoch[21](200/3203): Loss: 0.0000000477
+total gradient 0.00702963911501
+===> Epoch[21](300/3203): Loss: 0.0001777887
+total gradient 0.118584952147
+===> Epoch[21](400/3203): Loss: 0.0003663063
+total gradient 0.0961822934838
+===> Epoch[21](500/3203): Loss: 0.0000865221
+total gradient 0.0200664512971
+===> Epoch[21](600/3203): Loss: 0.0014743805
+total gradient 0.358404955908
+===> Epoch[21](700/3203): Loss: 0.0000868320
+total gradient 0.0289944048685
+===> Epoch[21](800/3203): Loss: 0.0124789951
+total gradient 2.52282039075
+===> Epoch[21](900/3203): Loss: 0.0009590626
+total gradient 0.377828221211
+===> Epoch[21](1000/3203): Loss: 0.0008726120
+total gradient 0.415672124286
+===> Epoch[21](1100/3203): Loss: 0.0017455339
+total gradient 0.259897912514
+===> Epoch[21](1200/3203): Loss: 0.0002348185
+total gradient 0.095151014846
+===> Epoch[21](1300/3203): Loss: 0.0018891096
+total gradient 1.12576010217
+===> Epoch[21](1400/3203): Loss: 0.0001176357
+total gradient 0.0311753204327
+===> Epoch[21](1500/3203): Loss: 0.0037148357
+total gradient 0.519354403328
+===> Epoch[21](1600/3203): Loss: 0.0002622843
+total gradient 0.0493459819246
+===> Epoch[21](1700/3203): Loss: 0.0002732754
+total gradient 0.0865927801799
+===> Epoch[21](1800/3203): Loss: 0.0007022858
+total gradient 0.506693884881
+===> Epoch[21](1900/3203): Loss: 0.0000016212
+total gradient 0.00704793150766
+===> Epoch[21](2000/3203): Loss: 0.0311395414
+total gradient 9.01349020744
+===> Epoch[21](2100/3203): Loss: 0.0001412630
+total gradient 0.0504565214327
+===> Epoch[21](2200/3203): Loss: 0.0000673532
+total gradient 0.0181614210228
+===> Epoch[21](2300/3203): Loss: 0.0000585079
+total gradient 0.0230689069658
+===> Epoch[21](2400/3203): Loss: 0.0005099535
+total gradient 0.156821018808
+===> Epoch[21](2500/3203): Loss: 0.0000701904
+total gradient 0.0403324929063
+===> Epoch[21](2600/3203): Loss: 0.0000236511
+total gradient 0.0129345702159
+===> Epoch[21](2700/3203): Loss: 0.0071098208
+total gradient 3.78688800303
+===> Epoch[21](2800/3203): Loss: 0.0014425755
+total gradient 0.830380500567
+===> Epoch[21](2900/3203): Loss: 0.0002863169
+total gradient 0.0509387075177
+===> Epoch[21](3000/3203): Loss: 0.0000005722
+total gradient 0.0070298833041
+===> Epoch[21](3100/3203): Loss: 0.0699505061
+total gradient 5.1623974871
+===> Epoch[21](3200/3203): Loss: 0.0000309944
+total gradient 0.0133055985765
+
+Test set: Average loss: 2.0951, Accuracy: 6320/7950 (79%)
+
+Checkpoint saved to model/model_epoch_21.pth
+epoch = 22 lr = 0.0001
+===> Epoch[22](100/3203): Loss: 0.0022489070
+total gradient 1.09580012953
+===> Epoch[22](200/3203): Loss: 0.0004655599
+total gradient 0.229156612552
+===> Epoch[22](300/3203): Loss: 0.0000133514
+total gradient 0.00781203194815
+===> Epoch[22](400/3203): Loss: 0.0001791000
+total gradient 0.0459703992217
+===> Epoch[22](500/3203): Loss: 0.0051562549
+total gradient 0.704923532925
+===> Epoch[22](600/3203): Loss: 0.0000054359
+total gradient 0.00755131833653
+===> Epoch[22](700/3203): Loss: 0.0003514290
+total gradient 0.122728642434
+===> Epoch[22](800/3203): Loss: 0.0014974118
+total gradient 0.386346487639
+===> Epoch[22](900/3203): Loss: 0.0000001907
+total gradient 0.00702709681393
+===> Epoch[22](1000/3203): Loss: 0.0000163555
+total gradient 0.00766699970297
+===> Epoch[22](1100/3203): Loss: 0.0000047207
+total gradient 0.00722503688041
+===> Epoch[22](1200/3203): Loss: 0.0000308990
+total gradient 0.0122509595317
+===> Epoch[22](1300/3203): Loss: 0.0000402451
+total gradient 0.0167029644659
+===> Epoch[22](1400/3203): Loss: 0.0017597437
+total gradient 0.598273601778
+===> Epoch[22](1500/3203): Loss: 0.0001584291
+total gradient 0.0543133545876
+===> Epoch[22](1600/3203): Loss: 0.0000021458
+total gradient 0.00705153533206
+===> Epoch[22](1700/3203): Loss: 0.0029555559
+total gradient 0.505802401428
+===> Epoch[22](1800/3203): Loss: 0.0001137495
+total gradient 0.0475407719131
+===> Epoch[22](1900/3203): Loss: 0.0002836943
+total gradient 0.0716818417174
+===> Epoch[22](2000/3203): Loss: 0.0010698080
+total gradient 0.5477276532
+===> Epoch[22](2100/3203): Loss: 0.0021960617
+total gradient 1.00722336948
+===> Epoch[22](2200/3203): Loss: 0.0004908562
+total gradient 0.279106522766
+===> Epoch[22](2300/3203): Loss: 0.0000005245
+total gradient 0.00702891244308
+===> Epoch[22](2400/3203): Loss: 0.0000142097
+total gradient 0.00790965849816
+===> Epoch[22](2500/3203): Loss: 0.0000680208
+total gradient 0.0334053175516
+===> Epoch[22](2600/3203): Loss: 0.0002357960
+total gradient 0.134305419973
+===> Epoch[22](2700/3203): Loss: 0.0000335693
+total gradient 0.0152038871407
+===> Epoch[22](2800/3203): Loss: 0.0000003815
+total gradient 0.00702618584887
+===> Epoch[22](2900/3203): Loss: 0.0032670735
+total gradient 0.758754419355
+===> Epoch[22](3000/3203): Loss: 0.0000006199
+total gradient 0.00703109088374
+===> Epoch[22](3100/3203): Loss: 0.0000189304
+total gradient 0.0108304471953
+===> Epoch[22](3200/3203): Loss: 0.0002505541
+total gradient 0.0709634386885
+
+Test set: Average loss: 2.1508, Accuracy: 6307/7950 (79%)
+
+Checkpoint saved to model/model_epoch_22.pth
+epoch = 23 lr = 0.0001
+===> Epoch[23](100/3203): Loss: 0.0011322260
+total gradient 0.526626078999
+===> Epoch[23](200/3203): Loss: 0.0005607128
+total gradient 0.0849705091915
+===> Epoch[23](300/3203): Loss: 0.0395284072
+total gradient 7.24085570829
+===> Epoch[23](400/3203): Loss: 0.0000450134
+total gradient 0.0332215984156
+===> Epoch[23](500/3203): Loss: 0.0011024236
+total gradient 0.346881818505
+===> Epoch[23](600/3203): Loss: 0.0208223108
+total gradient 6.56073349237
+===> Epoch[23](700/3203): Loss: 0.0078331111
+total gradient 2.24138148543
+===> Epoch[23](800/3203): Loss: 0.0000236034
+total gradient 0.00855734719383
+===> Epoch[23](900/3203): Loss: 0.0000005245
+total gradient 0.00702558867811
+===> Epoch[23](1000/3203): Loss: 0.0000092030
+total gradient 0.00739994944985
+===> Epoch[23](1100/3203): Loss: 0.0001373291
+total gradient 0.0366759859569
+===> Epoch[23](1200/3203): Loss: 0.0004745245
+total gradient 0.134946372961
+===> Epoch[23](1300/3203): Loss: 0.0000361443
+total gradient 0.0102324307009
+===> Epoch[23](1400/3203): Loss: 0.0060083508
+total gradient 1.83597606349
+===> Epoch[23](1500/3203): Loss: 0.0000097275
+total gradient 0.00812481746279
+===> Epoch[23](1600/3203): Loss: 0.0148699228
+total gradient 3.05924743701
+===> Epoch[23](1700/3203): Loss: 0.0000302792
+total gradient 0.0120345995105
+===> Epoch[23](1800/3203): Loss: 0.0062254071
+total gradient 3.48284341451
+===> Epoch[23](1900/3203): Loss: 0.0000021935
+total gradient 0.00709525976949
+===> Epoch[23](2000/3203): Loss: 0.0007489443
+total gradient 0.154827357269
+===> Epoch[23](2100/3203): Loss: 0.0002718926
+total gradient 0.101746512549
+===> Epoch[23](2200/3203): Loss: 0.0001570225
+total gradient 0.0509212868168
+===> Epoch[23](2300/3203): Loss: 0.0007841587
+total gradient 0.164381377317
+===> Epoch[23](2400/3203): Loss: 0.0000128746
+total gradient 0.00789571599374
+===> Epoch[23](2500/3203): Loss: 0.0283597056
+total gradient 5.70050293684
+===> Epoch[23](2600/3203): Loss: 0.0001343250
+total gradient 0.0273452330902
+===> Epoch[23](2700/3203): Loss: 0.0000009537
+total gradient 0.00702626545935
+===> Epoch[23](2800/3203): Loss: 0.1464672983
+total gradient 7.2160123103
+===> Epoch[23](2900/3203): Loss: 0.0083272932
+total gradient 1.66458591845
+===> Epoch[23](3000/3203): Loss: 0.0000007153
+total gradient 0.00702635367335
+===> Epoch[23](3100/3203): Loss: 0.0008401394
+total gradient 0.206372418379
+===> Epoch[23](3200/3203): Loss: 0.0006465673
+total gradient 0.184590357599
+
+Test set: Average loss: 2.2383, Accuracy: 6327/7950 (80%)
+
+Checkpoint saved to model/model_epoch_23.pth
+epoch = 24 lr = 0.0001
+===> Epoch[24](100/3203): Loss: 0.0000178337
+total gradient 0.0114021778054
+===> Epoch[24](200/3203): Loss: 0.0000191212
+total gradient 0.0112921881425
+===> Epoch[24](300/3203): Loss: 0.0000002384
+total gradient 0.00702327297069
+===> Epoch[24](400/3203): Loss: 0.0010776997
+total gradient 0.315345852245
+===> Epoch[24](500/3203): Loss: 0.0000286102
+total gradient 0.0201346219086
+===> Epoch[24](600/3203): Loss: 0.0029662133
+total gradient 0.862508572487
+===> Epoch[24](700/3203): Loss: 0.0000052452
+total gradient 0.00721709360833
+===> Epoch[24](800/3203): Loss: 0.0001642942
+total gradient 0.036455821213
+===> Epoch[24](900/3203): Loss: 0.0000119686
+total gradient 0.00856778169354
+===> Epoch[24](1000/3203): Loss: 0.0000111580
+total gradient 0.00870313591984
+===> Epoch[24](1100/3203): Loss: 0.0000061512
+total gradient 0.00711234902394
+===> Epoch[24](1200/3203): Loss: 0.0000460625
+total gradient 0.0109449602241
+===> Epoch[24](1300/3203): Loss: 0.0012840271
+total gradient 0.213984591507
+===> Epoch[24](1400/3203): Loss: 0.0004603147
+total gradient 0.155729162933
+===> Epoch[24](1500/3203): Loss: 0.0004481077
+total gradient 0.201800887065
+===> Epoch[24](1600/3203): Loss: 0.0000085354
+total gradient 0.00764707172064
+===> Epoch[24](1700/3203): Loss: 0.0000735521
+total gradient 0.0415236899235
+===> Epoch[24](1800/3203): Loss: 0.0000431776
+total gradient 0.0147059549056
+===> Epoch[24](1900/3203): Loss: 0.0000105381
+total gradient 0.00832760981654
+===> Epoch[24](2000/3203): Loss: 0.0002845287
+total gradient 0.140290716976
+===> Epoch[24](2100/3203): Loss: 0.0000770092
+total gradient 0.0266414621768
+===> Epoch[24](2200/3203): Loss: 0.0001324892
+total gradient 0.0646641250512
+===> Epoch[24](2300/3203): Loss: 0.0000028610
+total gradient 0.00707973139771
+===> Epoch[24](2400/3203): Loss: 0.0000217915
+total gradient 0.00873693737485
+===> Epoch[24](2500/3203): Loss: 0.0000342846
+total gradient 0.027540602823
+===> Epoch[24](2600/3203): Loss: 0.0021434545
+total gradient 1.02022010523
+===> Epoch[24](2700/3203): Loss: 0.0002315044
+total gradient 0.0520466257007
+===> Epoch[24](2800/3203): Loss: 0.0007445097
+total gradient 0.215993770925
+===> Epoch[24](2900/3203): Loss: 0.0000618935
+total gradient 0.0121948521796
+===> Epoch[24](3000/3203): Loss: 0.0000971556
+total gradient 0.0221269708149
+===> Epoch[24](3100/3203): Loss: 0.0003075361
+total gradient 0.139516246162
+===> Epoch[24](3200/3203): Loss: 0.0002972841
+total gradient 0.0829206943363
+
+Test set: Average loss: 2.2811, Accuracy: 6298/7950 (79%)
+
+Checkpoint saved to model/model_epoch_24.pth
+epoch = 25 lr = 0.0001
+===> Epoch[25](100/3203): Loss: 0.0000051498
+total gradient 0.00740332299776
+===> Epoch[25](200/3203): Loss: 0.0000058174
+total gradient 0.00748431465417
+===> Epoch[25](300/3203): Loss: 0.0001760244
+total gradient 0.0484992599821
+===> Epoch[25](400/3203): Loss: 0.0000911236
+total gradient 0.0512445204063
+===> Epoch[25](500/3203): Loss: 0.0000796795
+total gradient 0.0309722135505
+===> Epoch[25](600/3203): Loss: 0.0000000477
+total gradient 0.00702097739593
+===> Epoch[25](700/3203): Loss: 0.0000086308
+total gradient 0.00744296585033
+===> Epoch[25](800/3203): Loss: 0.0001536369
+total gradient 0.0843335302093
+===> Epoch[25](900/3203): Loss: 0.0000031471
+total gradient 0.00712436038706
+===> Epoch[25](1000/3203): Loss: 0.0000171661
+total gradient 0.0154856019818
+===> Epoch[25](1100/3203): Loss: 0.0000478745
+total gradient 0.013998995389
+===> Epoch[25](1200/3203): Loss: 0.0001206875
+total gradient 0.0310955184481
+===> Epoch[25](1300/3203): Loss: 0.0015188933
+total gradient 1.11112997991
+===> Epoch[25](1400/3203): Loss: 0.0000834703
+total gradient 0.0215206994745
+===> Epoch[25](1500/3203): Loss: 0.0029890060
+total gradient 0.794994499385
+===> Epoch[25](1600/3203): Loss: 0.0001390219
+total gradient 0.0742248873624
+===> Epoch[25](1700/3203): Loss: 0.0000729561
+total gradient 0.0279979875156
+===> Epoch[25](1800/3203): Loss: 0.0000593662
+total gradient 0.0142609124009
+===> Epoch[25](1900/3203): Loss: 0.0015828132
+total gradient 0.340255788136
+===> Epoch[25](2000/3203): Loss: 0.0000474453
+total gradient 0.0351653341819
+===> Epoch[25](2100/3203): Loss: 0.0000009060
+total gradient 0.00703900057323
+===> Epoch[25](2200/3203): Loss: 0.0000841856
+total gradient 0.0189201547582
+===> Epoch[25](2300/3203): Loss: 0.0014388323
+total gradient 0.559014775915
+===> Epoch[25](2400/3203): Loss: 0.0002697945
+total gradient 0.0863901531569
+===> Epoch[25](2500/3203): Loss: 0.0000045776
+total gradient 0.00715440688939
+===> Epoch[25](2600/3203): Loss: 0.0000010967
+total gradient 0.00702764300123
+===> Epoch[25](2700/3203): Loss: 0.0060718297
+total gradient 1.83733072918
+===> Epoch[25](2800/3203): Loss: 0.0000122547
+total gradient 0.00776421564887
+===> Epoch[25](2900/3203): Loss: 0.0006955147
+total gradient 0.268762285922
+===> Epoch[25](3000/3203): Loss: 0.0000009537
+total gradient 0.00702391221395
+===> Epoch[25](3100/3203): Loss: 0.0002827644
+total gradient 0.0930592634699
+===> Epoch[25](3200/3203): Loss: 0.0017478705
+total gradient 0.538997219973
+
+Test set: Average loss: 2.3557, Accuracy: 6318/7950 (79%)
+
+Checkpoint saved to model/model_epoch_25.pth
+epoch = 26 lr = 0.0001
+===> Epoch[26](100/3203): Loss: 0.0000334740
+total gradient 0.00951012643831
+===> Epoch[26](200/3203): Loss: 0.0003047943
+total gradient 0.0742538003992
+===> Epoch[26](300/3203): Loss: 0.0000095367
+total gradient 0.00880774390972
+===> Epoch[26](400/3203): Loss: 0.0000506878
+total gradient 0.0216505303396
+===> Epoch[26](500/3203): Loss: 0.0000057697
+total gradient 0.00742744653202
+===> Epoch[26](600/3203): Loss: 0.0000240326
+total gradient 0.00943746077155
+===> Epoch[26](700/3203): Loss: 0.0001004457
+total gradient 0.0345436007825
+===> Epoch[26](800/3203): Loss: 0.0000000000
+total gradient 0.00701868196958
+===> Epoch[26](900/3203): Loss: 0.0000522852
+total gradient 0.0228232008373
+===> Epoch[26](1000/3203): Loss: 0.0000133991
+total gradient 0.00747055032307
+===> Epoch[26](1100/3203): Loss: 0.0000277519
+total gradient 0.0159123605958
+===> Epoch[26](1200/3203): Loss: 0.0009903193
+total gradient 0.65895635792
+===> Epoch[26](1300/3203): Loss: 0.0021441698
+total gradient 0.325587256006
+===> Epoch[26](1400/3203): Loss: 0.0000061512
+total gradient 0.00757983310081
+===> Epoch[26](1500/3203): Loss: 0.0000708580
+total gradient 0.0148112087151
+===> Epoch[26](1600/3203): Loss: 0.0001515388
+total gradient 0.0387092175248
+===> Epoch[26](1700/3203): Loss: 0.0007205248
+total gradient 0.151339035923
+===> Epoch[26](1800/3203): Loss: 0.0006626129
+total gradient 0.357859076479
+===> Epoch[26](1900/3203): Loss: 0.0010288954
+total gradient 0.146959231663
+===> Epoch[26](2000/3203): Loss: 0.0000241280
+total gradient 0.0103489186773
+===> Epoch[26](2100/3203): Loss: 0.0000096321
+total gradient 0.00821776801214
+===> Epoch[26](2200/3203): Loss: 0.0000346184
+total gradient 0.0190652185285
+===> Epoch[26](2300/3203): Loss: 0.0008468389
+total gradient 0.158899346497
+===> Epoch[26](2400/3203): Loss: 0.0000617504
+total gradient 0.0315650689586
+===> Epoch[26](2500/3203): Loss: 0.0020392418
+total gradient 0.488859679857
+===> Epoch[26](2600/3203): Loss: 0.0000224590
+total gradient 0.00845547861788
+===> Epoch[26](2700/3203): Loss: 0.0000037193
+total gradient 0.00707687037307
+===> Epoch[26](2800/3203): Loss: 0.0000016212
+total gradient 0.00709480334516
+===> Epoch[26](2900/3203): Loss: 0.0000070095
+total gradient 0.00741817498769
+===> Epoch[26](3000/3203): Loss: 0.0005516767
+total gradient 0.170536500351
+===> Epoch[26](3100/3203): Loss: 0.0002380610
+total gradient 0.110464054988
+===> Epoch[26](3200/3203): Loss: 0.0144040585
+total gradient 2.07071920827
+
+Test set: Average loss: 2.3430, Accuracy: 6322/7950 (80%)
+
+Checkpoint saved to model/model_epoch_26.pth
+epoch = 27 lr = 0.0001
+===> Epoch[27](100/3203): Loss: 0.0000163555
+total gradient 0.0104304265474
+===> Epoch[27](200/3203): Loss: 0.0004094839
+total gradient 0.181292930376
+===> Epoch[27](300/3203): Loss: 0.0001620531
+total gradient 0.0344405449862
+===> Epoch[27](400/3203): Loss: 0.0000040531
+total gradient 0.00724581111853
+===> Epoch[27](500/3203): Loss: 0.0000359535
+total gradient 0.0197469054197
+===> Epoch[27](600/3203): Loss: 0.0000134468
+total gradient 0.00975781602213
+===> Epoch[27](700/3203): Loss: 0.0000639439
+total gradient 0.0203689995239
+===> Epoch[27](800/3203): Loss: 0.0004016399
+total gradient 0.497192306369
+===> Epoch[27](900/3203): Loss: 0.0001815557
+total gradient 0.0985156180884
+===> Epoch[27](1000/3203): Loss: 0.0001564503
+total gradient 0.0588072143533
+===> Epoch[27](1100/3203): Loss: 0.0001964807
+total gradient 0.0640285429197
+===> Epoch[27](1200/3203): Loss: 0.0000058174
+total gradient 0.00725968399666
+===> Epoch[27](1300/3203): Loss: 0.0000265598
+total gradient 0.0115047501085
+===> Epoch[27](1400/3203): Loss: 0.0000800610
+total gradient 0.0487791599956
+===> Epoch[27](1500/3203): Loss: 0.0001718998
+total gradient 0.0269070424312
+===> Epoch[27](1600/3203): Loss: 0.0019383192
+total gradient 0.58416267859
+===> Epoch[27](1700/3203): Loss: 0.0000022411
+total gradient 0.00702943045302
+===> Epoch[27](1800/3203): Loss: 0.0000960112
+total gradient 0.0332396595132
+===> Epoch[27](1900/3203): Loss: 0.0000044346
+total gradient 0.00722240022208
+===> Epoch[27](2000/3203): Loss: 0.0003518820
+total gradient 0.130347840413
+===> Epoch[27](2100/3203): Loss: 0.0000888109
+total gradient 0.0154487902457
+===> Epoch[27](2200/3203): Loss: 0.0000038147
+total gradient 0.00707378449569
+===> Epoch[27](2300/3203): Loss: 0.0000414133
+total gradient 0.0127463741941
+===> Epoch[27](2400/3203): Loss: 0.0000383854
+total gradient 0.0268779629128
+===> Epoch[27](2500/3203): Loss: 0.0000147343
+total gradient 0.00861059502951
+===> Epoch[27](2600/3203): Loss: 0.0000016689
+total gradient 0.00703069665115
+===> Epoch[27](2700/3203): Loss: 0.0000463009
+total gradient 0.0156174873816
+===> Epoch[27](2800/3203): Loss: 0.0000187874
+total gradient 0.0151185173695
+===> Epoch[27](2900/3203): Loss: 0.0000186920
+total gradient 0.0104529786161
+===> Epoch[27](3000/3203): Loss: 0.0000043869
+total gradient 0.00718009733076
+===> Epoch[27](3100/3203): Loss: 0.0000019550
+total gradient 0.00707842387499
+===> Epoch[27](3200/3203): Loss: 0.0001678228
+total gradient 0.0835396998612
+
+Test set: Average loss: 2.3957, Accuracy: 6319/7950 (79%)
+
+Checkpoint saved to model/model_epoch_27.pth
+epoch = 28 lr = 0.0001
+===> Epoch[28](100/3203): Loss: 0.0000293255
+total gradient 0.0117600567991
+===> Epoch[28](200/3203): Loss: 0.0000000477
+total gradient 0.00701477653975
+===> Epoch[28](300/3203): Loss: 0.0000424385
+total gradient 0.0109935450393
+===> Epoch[28](400/3203): Loss: 0.0000355721
+total gradient 0.0102299604281
+===> Epoch[28](500/3203): Loss: 0.0002882481
+total gradient 0.104728575426
+===> Epoch[28](600/3203): Loss: 0.0021131753
+total gradient 0.496109045558
+===> Epoch[28](700/3203): Loss: 0.0001022816
+total gradient 0.0483314876776
+===> Epoch[28](800/3203): Loss: 0.0038800121
+total gradient 1.22629073053
+===> Epoch[28](900/3203): Loss: 0.0000031471
+total gradient 0.00707843760615
+===> Epoch[28](1000/3203): Loss: 0.0001846552
+total gradient 0.133761455346
+===> Epoch[28](1100/3203): Loss: 0.0011218548
+total gradient 0.396180075269
+===> Epoch[28](1200/3203): Loss: 0.0000000477
+total gradient 0.00701409354985
+===> Epoch[28](1300/3203): Loss: 0.0000252247
+total gradient 0.0131252914953
+===> Epoch[28](1400/3203): Loss: 0.0000004292
+total gradient 0.00701434963712
+===> Epoch[28](1500/3203): Loss: 0.0000061035
+total gradient 0.00755002249944
+===> Epoch[28](1600/3203): Loss: 0.0000105858
+total gradient 0.00898803213188
+===> Epoch[28](1700/3203): Loss: 0.0000000477
+total gradient 0.0070137856368
+===> Epoch[28](1800/3203): Loss: 0.0016028404
+total gradient 0.499764373169
+===> Epoch[28](1900/3203): Loss: 0.0037491203
+total gradient 1.10412181504
+===> Epoch[28](2000/3203): Loss: 0.0006126642
+total gradient 0.133898281192
+===> Epoch[28](2100/3203): Loss: 0.0000064373
+total gradient 0.00735792047239
+===> Epoch[28](2200/3203): Loss: 0.0008873701
+total gradient 0.143037550508
+===> Epoch[28](2300/3203): Loss: 0.0000515938
+total gradient 0.0152051688229
+===> Epoch[28](2400/3203): Loss: 0.0002013683
+total gradient 0.060520620326
+===> Epoch[28](2500/3203): Loss: 0.0000015259
+total gradient 0.00702636568691
+===> Epoch[28](2600/3203): Loss: 0.0000048637
+total gradient 0.00716975343872
+===> Epoch[28](2700/3203): Loss: 0.0001981020
+total gradient 0.0779983931018
+===> Epoch[28](2800/3203): Loss: 0.0001599312
+total gradient 0.0886095142073
+===> Epoch[28](2900/3203): Loss: 0.0004657507
+total gradient 0.175196303594
+===> Epoch[28](3000/3203): Loss: 0.0006661415
+total gradient 0.285156700791
+===> Epoch[28](3100/3203): Loss: 0.0000030994
+total gradient 0.00717396653153
+===> Epoch[28](3200/3203): Loss: 0.1702832431
+total gradient 10.0000054418
+
+Test set: Average loss: 2.4088, Accuracy: 6333/7950 (80%)
+
+Checkpoint saved to model/model_epoch_28.pth
+epoch = 29 lr = 0.0001
+===> Epoch[29](100/3203): Loss: 0.0000380516
+total gradient 0.0158356702026
+===> Epoch[29](200/3203): Loss: 0.0002782583
+total gradient 0.0507608342202
+===> Epoch[29](300/3203): Loss: 0.0000300407
+total gradient 0.0168722193149
+===> Epoch[29](400/3203): Loss: 0.0000464916
+total gradient 0.0149807815007
+===> Epoch[29](500/3203): Loss: 0.0012464762
+total gradient 0.976890089745
+===> Epoch[29](600/3203): Loss: 0.0000505924
+total gradient 0.015000526983
+===> Epoch[29](700/3203): Loss: 0.0000288010
+total gradient 0.0199393360232
+===> Epoch[29](800/3203): Loss: 0.0000000954
+total gradient 0.00701232843751
+===> Epoch[29](900/3203): Loss: 0.0001969576
+total gradient 0.0689801099664
+===> Epoch[29](1000/3203): Loss: 0.0000148773
+total gradient 0.0124649705502
+===> Epoch[29](1100/3203): Loss: 0.0001615286
+total gradient 0.0470677698957
+===> Epoch[29](1200/3203): Loss: 0.0003823996
+total gradient 0.0919353101153
+===> Epoch[29](1300/3203): Loss: 0.0000020504
+total gradient 0.00720997508125
+===> Epoch[29](1400/3203): Loss: 0.0000351906
+total gradient 0.0133297512705
+===> Epoch[29](1500/3203): Loss: 0.0000049114
+total gradient 0.00727918260884
+===> Epoch[29](1600/3203): Loss: 0.0000379086
+total gradient 0.018461817423
+===> Epoch[29](1700/3203): Loss: 0.0000086308
+total gradient 0.00727883807596
+===> Epoch[29](1800/3203): Loss: 0.0000194073
+total gradient 0.011996262336
+===> Epoch[29](1900/3203): Loss: 0.0000199795
+total gradient 0.0113095223428
+===> Epoch[29](2000/3203): Loss: 0.0000061035
+total gradient 0.00748044613679
+===> Epoch[29](2100/3203): Loss: 0.0000356674
+total gradient 0.0155332276474
+===> Epoch[29](2200/3203): Loss: 0.0002771616
+total gradient 0.105594856283
+===> Epoch[29](2300/3203): Loss: 0.0079743266
+total gradient 4.16264141516
+===> Epoch[29](2400/3203): Loss: 0.0105296131
+total gradient 4.70000480039
+===> Epoch[29](2500/3203): Loss: 0.0000097752
+total gradient 0.00740014091884
+===> Epoch[29](2600/3203): Loss: 0.0000352383
+total gradient 0.0136860512181
+===> Epoch[29](2700/3203): Loss: 0.0003568172
+total gradient 0.121985080796
+===> Epoch[29](2800/3203): Loss: 0.0000076294
+total gradient 0.00745645014597
+===> Epoch[29](2900/3203): Loss: 0.0116029978
+total gradient 8.23180847966
+===> Epoch[29](3000/3203): Loss: 0.0000852346
+total gradient 0.0315002553737
+===> Epoch[29](3100/3203): Loss: 0.0000014305
+total gradient 0.00705413246546
+===> Epoch[29](3200/3203): Loss: 0.0001421213
+total gradient 0.0294214074943
+
+Test set: Average loss: 2.4764, Accuracy: 6316/7950 (79%)
+
+Checkpoint saved to model/model_epoch_29.pth
+epoch = 30 lr = 0.0001
+===> Epoch[30](100/3203): Loss: 0.0000080109
+total gradient 0.00775679398945
+===> Epoch[30](200/3203): Loss: 0.0000331879
+total gradient 0.0201001350162
+===> Epoch[30](300/3203): Loss: 0.0013754368
+total gradient 0.285066094554
+===> Epoch[30](400/3203): Loss: 0.0002422571
+total gradient 0.285754073933
+===> Epoch[30](500/3203): Loss: 0.0000489473
+total gradient 0.0121200086618
+===> Epoch[30](600/3203): Loss: 0.0027197599
+total gradient 0.682309993617
+===> Epoch[30](700/3203): Loss: 0.0000006199
+total gradient 0.00701182660583
+===> Epoch[30](800/3203): Loss: 0.0000095367
+total gradient 0.00943266089344
+===> Epoch[30](900/3203): Loss: 0.0006609440
+total gradient 0.158995695283
+===> Epoch[30](1000/3203): Loss: 0.0000059128
+total gradient 0.00727446847473
+===> Epoch[30](1100/3203): Loss: 0.0000537872
+total gradient 0.0359233654767
+===> Epoch[30](1200/3203): Loss: 0.0000000000
+total gradient 0.00700982320318
+===> Epoch[30](1300/3203): Loss: 0.0000431538
+total gradient 0.0210311924132
+===> Epoch[30](1400/3203): Loss: 0.0000004292
+total gradient 0.00701148121223
+===> Epoch[30](1500/3203): Loss: 0.0014634847
+total gradient 0.479887395863
+===> Epoch[30](1600/3203): Loss: 0.0008575916
+total gradient 0.245328963432
+===> Epoch[30](1700/3203): Loss: 0.0123422444
+total gradient 2.23994800353
+===> Epoch[30](1800/3203): Loss: 0.0000002384
+total gradient 0.00700971911081
+===> Epoch[30](1900/3203): Loss: 0.0000926018
+total gradient 0.0275002418517
+===> Epoch[30](2000/3203): Loss: 0.0001799107
+total gradient 0.111389066773
+===> Epoch[30](2100/3203): Loss: 0.0001009703
+total gradient 0.0332493935037
+===> Epoch[30](2200/3203): Loss: 0.0000260830
+total gradient 0.0123362004294
+===> Epoch[30](2300/3203): Loss: 0.0001761198
+total gradient 0.0381944195374
+===> Epoch[30](2400/3203): Loss: 0.0000009060
+total gradient 0.00701779375995
+===> Epoch[30](2500/3203): Loss: 0.0000038147
+total gradient 0.00742038158708
+===> Epoch[30](2600/3203): Loss: 0.0000204563
+total gradient 0.0116628661469
+===> Epoch[30](2700/3203): Loss: 0.0001012802
+total gradient 0.0555755507738
+===> Epoch[30](2800/3203): Loss: 0.0003363371
+total gradient 0.078856300349
+===> Epoch[30](2900/3203): Loss: 0.0029097558
+total gradient 1.71114211739
+===> Epoch[30](3000/3203): Loss: 0.0053621768
+total gradient 1.05422442107
+===> Epoch[30](3100/3203): Loss: 0.0000131607
+total gradient 0.00783996175662
+===> Epoch[30](3200/3203): Loss: 0.0001076698
+total gradient 0.0487475804298
+
+Test set: Average loss: 2.4977, Accuracy: 6351/7950 (80%)
+
+Checkpoint saved to model/model_epoch_30.pth
+epoch = 31 lr = 1e-05
+===> Epoch[31](100/3203): Loss: 0.0046029687
+total gradient 1.41259567429
+===> Epoch[31](200/3203): Loss: 0.0000024319
+total gradient 0.0070339921131
+===> Epoch[31](300/3203): Loss: 0.0000160694
+total gradient 0.00927531605657
+===> Epoch[31](400/3203): Loss: 0.0000512123
+total gradient 0.0380421589544
+===> Epoch[31](500/3203): Loss: 0.0040934919
+total gradient 2.04699004915
+===> Epoch[31](600/3203): Loss: 0.0000010490
+total gradient 0.00701431651052
+===> Epoch[31](700/3203): Loss: 0.0001157522
+total gradient 0.0498393483291
+===> Epoch[31](800/3203): Loss: 0.0000008106
+total gradient 0.00701249369733
+===> Epoch[31](900/3203): Loss: 0.0000341415
+total gradient 0.0111537267275
+===> Epoch[31](1000/3203): Loss: 0.0000323296
+total gradient 0.0150867764454
+===> Epoch[31](1100/3203): Loss: 0.0001906157
+total gradient 0.036407882338
+===> Epoch[31](1200/3203): Loss: 0.0000023842
+total gradient 0.00705206582783
+===> Epoch[31](1300/3203): Loss: 0.0000000954
+total gradient 0.00700839177333
+===> Epoch[31](1400/3203): Loss: 0.0000123978
+total gradient 0.0100492953032
+===> Epoch[31](1500/3203): Loss: 0.0000001907
+total gradient 0.00700841841349
+===> Epoch[31](1600/3203): Loss: 0.0017959118
+total gradient 0.521490179345
+===> Epoch[31](1700/3203): Loss: 0.0002612352
+total gradient 0.148380403193
+===> Epoch[31](1800/3203): Loss: 0.0016376972
+total gradient 0.468575277567
+===> Epoch[31](1900/3203): Loss: 0.0004554510
+total gradient 0.113824202533
+===> Epoch[31](2000/3203): Loss: 0.0004154682
+total gradient 0.200626266336
+===> Epoch[31](2100/3203): Loss: 0.0045816181
+total gradient 3.2228758739
+===> Epoch[31](2200/3203): Loss: 0.0000162601
+total gradient 0.0100213741608
+===> Epoch[31](2300/3203): Loss: 0.0006284714
+total gradient 0.338049255905
+===> Epoch[31](2400/3203): Loss: 0.0002093315
+total gradient 0.133387197052
+===> Epoch[31](2500/3203): Loss: 0.0000632763
+total gradient 0.0243164515323
+===> Epoch[31](2600/3203): Loss: 0.0000069141
+total gradient 0.00721486242197
+===> Epoch[31](2700/3203): Loss: 0.0002709627
+total gradient 0.0708341159177
+===> Epoch[31](2800/3203): Loss: 0.0005969524
+total gradient 0.241080444882
+===> Epoch[31](2900/3203): Loss: 0.0000002861
+total gradient 0.00701304935174
+===> Epoch[31](3000/3203): Loss: 0.0002898455
+total gradient 0.240538540722
+===> Epoch[31](3100/3203): Loss: 0.0000841618
+total gradient 0.0386879946013
+===> Epoch[31](3200/3203): Loss: 0.0007758141
+total gradient 0.469549239438
+
+Test set: Average loss: 2.4805, Accuracy: 6331/7950 (80%)
+
+Checkpoint saved to model/model_epoch_31.pth
+epoch = 32 lr = 1e-05
+===> Epoch[32](100/3203): Loss: 0.0000192642
+total gradient 0.00867069548924
+===> Epoch[32](200/3203): Loss: 0.0000017166
+total gradient 0.00703832964525
+===> Epoch[32](300/3203): Loss: 0.0001668930
+total gradient 0.0724726745004
+===> Epoch[32](400/3203): Loss: 0.0000000000
+total gradient 0.00700837248739
+===> Epoch[32](500/3203): Loss: 0.0002112150
+total gradient 0.0862954302931
+===> Epoch[32](600/3203): Loss: 0.0021669627
+total gradient 1.93300026806
+===> Epoch[32](700/3203): Loss: 0.0007642746
+total gradient 0.198761678971
+===> Epoch[32](800/3203): Loss: 0.0002696514
+total gradient 0.174042986447
+===> Epoch[32](900/3203): Loss: 0.0000142574
+total gradient 0.00864402370301
+===> Epoch[32](1000/3203): Loss: 0.0001269817
+total gradient 0.0294082363277
+===> Epoch[32](1100/3203): Loss: 0.0000005245
+total gradient 0.00700940109126
+===> Epoch[32](1200/3203): Loss: 0.0000423431
+total gradient 0.0174394152181
+===> Epoch[32](1300/3203): Loss: 0.0000000477
+total gradient 0.00700831602868
+===> Epoch[32](1400/3203): Loss: 0.0000697613
+total gradient 0.024831237398
+===> Epoch[32](1500/3203): Loss: 0.0000400066
+total gradient 0.0148388671338
+===> Epoch[32](1600/3203): Loss: 0.0000082493
+total gradient 0.00789377404207
+===> Epoch[32](1700/3203): Loss: 0.0000506878
+total gradient 0.0186270110984
+===> Epoch[32](1800/3203): Loss: 0.0000430584
+total gradient 0.0115031225624
+===> Epoch[32](1900/3203): Loss: 0.0001065016
+total gradient 0.0337453952658
+===> Epoch[32](2000/3203): Loss: 0.0000537395
+total gradient 0.0165174706422
+===> Epoch[32](2100/3203): Loss: 0.0000193596
+total gradient 0.00794628269679
+===> Epoch[32](2200/3203): Loss: 0.0000031471
+total gradient 0.00712148973206
+===> Epoch[32](2300/3203): Loss: 0.0000036716
+total gradient 0.0070952834369
+===> Epoch[32](2400/3203): Loss: 0.0000001907
+total gradient 0.00700880368106
+===> Epoch[32](2500/3203): Loss: 0.0013091564
+total gradient 0.612734751134
+===> Epoch[32](2600/3203): Loss: 0.0000953674
+total gradient 0.0269179905387
+===> Epoch[32](2700/3203): Loss: 0.0000573635
+total gradient 0.0266456151371
+===> Epoch[32](2800/3203): Loss: 0.0000530720
+total gradient 0.0171967721027
+===> Epoch[32](2900/3203): Loss: 0.0050427318
+total gradient 1.97248975577
+===> Epoch[32](3000/3203): Loss: 0.0006710530
+total gradient 0.257786717483
+===> Epoch[32](3100/3203): Loss: 0.0000206470
+total gradient 0.0103717541359
+===> Epoch[32](3200/3203): Loss: 0.0001283646
+total gradient 0.0716915773541
+
+Test set: Average loss: 2.4779, Accuracy: 6329/7950 (80%)
+
+Checkpoint saved to model/model_epoch_32.pth
+epoch = 33 lr = 1e-05
+===> Epoch[33](100/3203): Loss: 0.0000493526
+total gradient 0.020882168576
+===> Epoch[33](200/3203): Loss: 0.0000038624
+total gradient 0.00720740837497
+===> Epoch[33](300/3203): Loss: 0.0017142534
+total gradient 0.47832868095
+===> Epoch[33](400/3203): Loss: 0.0007905721
+total gradient 0.23782188762
+===> Epoch[33](500/3203): Loss: 0.0020035743
+total gradient 0.373426860827
+===> Epoch[33](600/3203): Loss: 0.0000008106
+total gradient 0.00701661282183
+===> Epoch[33](700/3203): Loss: 0.0000005722
+total gradient 0.00701011908238
+===> Epoch[33](800/3203): Loss: 0.0006450176
+total gradient 0.153983397438
+===> Epoch[33](900/3203): Loss: 0.0000032425
+total gradient 0.00707390520142
+===> Epoch[33](1000/3203): Loss: 0.0003817797
+total gradient 0.164597053622
+===> Epoch[33](1100/3203): Loss: 0.0000000954
+total gradient 0.00700829672406
+===> Epoch[33](1200/3203): Loss: 0.0004207611
+total gradient 0.148244884922
+===> Epoch[33](1300/3203): Loss: 0.0067045451
+total gradient 1.62493805635
+===> Epoch[33](1400/3203): Loss: 0.0000025272
+total gradient 0.00711140716192
+===> Epoch[33](1500/3203): Loss: 0.0000043392
+total gradient 0.0073502942537
+===> Epoch[33](1600/3203): Loss: 0.0000002861
+total gradient 0.00700845492099
+===> Epoch[33](1700/3203): Loss: 0.0000004768
+total gradient 0.00701634919952
+===> Epoch[33](1800/3203): Loss: 0.0050861118
+total gradient 1.40434108533
+===> Epoch[33](1900/3203): Loss: 0.0022806884
+total gradient 0.556070457753
+===> Epoch[33](2000/3203): Loss: 0.0000000000
+total gradient 0.00700824490244
+===> Epoch[33](2100/3203): Loss: 0.0011237621
+total gradient 0.358255962459
+===> Epoch[33](2200/3203): Loss: 0.0004020691
+total gradient 0.151648831174
+===> Epoch[33](2300/3203): Loss: 0.0002251863
+total gradient 0.0593539553744
+===> Epoch[33](2400/3203): Loss: 0.0124034882
+total gradient 2.35822026877
+===> Epoch[33](2500/3203): Loss: 0.0000005245
+total gradient 0.00701485815463
+===> Epoch[33](2600/3203): Loss: 0.0000346661
+total gradient 0.01056061179
+===> Epoch[33](2700/3203): Loss: 0.0000041485
+total gradient 0.00730141210358
+===> Epoch[33](2800/3203): Loss: 0.0000028133
+total gradient 0.00740015129069
+===> Epoch[33](2900/3203): Loss: 0.0000066280
+total gradient 0.00760312151328
+===> Epoch[33](3000/3203): Loss: 0.0000000000
+total gradient 0.00700821992745
+===> Epoch[33](3100/3203): Loss: 0.0000056744
+total gradient 0.00733545146965
+===> Epoch[33](3200/3203): Loss: 0.0000770330
+total gradient 0.0361012666428
+
+Test set: Average loss: 2.5064, Accuracy: 6309/7950 (79%)
+
+Checkpoint saved to model/model_epoch_33.pth
+epoch = 34 lr = 1e-05
+===> Epoch[34](100/3203): Loss: 0.0000196457
+total gradient 0.00800504299108
+===> Epoch[34](200/3203): Loss: 0.0000037670
+total gradient 0.00710434798573
+===> Epoch[34](300/3203): Loss: 0.0000766754
+total gradient 0.0319965114999
+===> Epoch[34](400/3203): Loss: 0.0019437789
+total gradient 1.02289621828
+===> Epoch[34](500/3203): Loss: 0.0000091076
+total gradient 0.00842869736252
+===> Epoch[34](600/3203): Loss: 0.0051238895
+total gradient 0.942959261076
+===> Epoch[34](700/3203): Loss: 0.0000048637
+total gradient 0.00723573673865
+===> Epoch[34](800/3203): Loss: 0.0000003338
+total gradient 0.00700900245422
+===> Epoch[34](900/3203): Loss: 0.0000051498
+total gradient 0.00781607180486
+===> Epoch[34](1000/3203): Loss: 0.0000000000
+total gradient 0.00700819792148
+===> Epoch[34](1100/3203): Loss: 0.0000002384
+total gradient 0.00700807392247
+===> Epoch[34](1200/3203): Loss: 0.0000362873
+total gradient 0.0155200717977
+===> Epoch[34](1300/3203): Loss: 0.0000039577
+total gradient 0.00716300775013
+===> Epoch[34](1400/3203): Loss: 0.0030017495
+total gradient 0.738692014378
+===> Epoch[34](1500/3203): Loss: 0.0004100323
+total gradient 0.139244986721
+===> Epoch[34](1600/3203): Loss: 0.0000085831
+total gradient 0.0073608218586
+===> Epoch[34](1700/3203): Loss: 0.0000134468
+total gradient 0.0133024176498
+===> Epoch[34](1800/3203): Loss: 0.0000065327
+total gradient 0.00722178736904
+===> Epoch[34](1900/3203): Loss: 0.0001520157
+total gradient 0.0527920509708
+===> Epoch[34](2000/3203): Loss: 0.0000257492
+total gradient 0.0174247937672
+===> Epoch[34](2100/3203): Loss: 0.0000055790
+total gradient 0.00754710113675
+===> Epoch[34](2200/3203): Loss: 0.0004292488
+total gradient 0.168546101808
+===> Epoch[34](2300/3203): Loss: 0.0000000000
+total gradient 0.00700813369435
+===> Epoch[34](2400/3203): Loss: 0.0000004768
+total gradient 0.00701069216742
+===> Epoch[34](2500/3203): Loss: 0.0000273705
+total gradient 0.00996919118955
+===> Epoch[34](2600/3203): Loss: 0.0000952959
+total gradient 0.045801397084
+===> Epoch[34](2700/3203): Loss: 0.0020335198
+total gradient 0.47858324054
+===> Epoch[34](2800/3203): Loss: 0.0005395651
+total gradient 0.279264415305
+===> Epoch[34](2900/3203): Loss: 0.0000043869
+total gradient 0.00710171075956
+===> Epoch[34](3000/3203): Loss: 0.0001020432
+total gradient 0.0339234388698
+===> Epoch[34](3100/3203): Loss: 0.0000007629
+total gradient 0.00701078863987
+===> Epoch[34](3200/3203): Loss: 0.0000000000
+total gradient 0.00700813493416
+
+Test set: Average loss: 2.4567, Accuracy: 6313/7950 (79%)
+
+Checkpoint saved to model/model_epoch_34.pth
+epoch = 35 lr = 1e-05
+===> Epoch[35](100/3203): Loss: 0.0000102043
+total gradient 0.00865205182846
+===> Epoch[35](200/3203): Loss: 0.0000006199
+total gradient 0.0070172789655
+===> Epoch[35](300/3203): Loss: 0.0000630856
+total gradient 0.0238597677761
+===> Epoch[35](400/3203): Loss: 0.0003271103
+total gradient 0.237130463129
+===> Epoch[35](500/3203): Loss: 0.0002390385
+total gradient 0.116507834607
+===> Epoch[35](600/3203): Loss: 0.0004748821
+total gradient 0.120059444327
+===> Epoch[35](700/3203): Loss: 0.0005978107
+total gradient 0.236506282335
+===> Epoch[35](800/3203): Loss: 0.0000014305
+total gradient 0.00708681610268
+===> Epoch[35](900/3203): Loss: 0.0000422239
+total gradient 0.0154730719658
+===> Epoch[35](1000/3203): Loss: 0.0003926277
+total gradient 0.0833745496669
+===> Epoch[35](1100/3203): Loss: 0.0000888348
+total gradient 0.0446273069432
+===> Epoch[35](1200/3203): Loss: 0.0000039101
+total gradient 0.00714169143794
+===> Epoch[35](1300/3203): Loss: 0.0024717450
+total gradient 0.816461465607
+===> Epoch[35](1400/3203): Loss: 0.0000897646
+total gradient 0.0299485494686
+===> Epoch[35](1500/3203): Loss: 0.0000360012
+total gradient 0.0173959383649
+===> Epoch[35](1600/3203): Loss: 0.0035916329
+total gradient 1.57570830285
+===> Epoch[35](1700/3203): Loss: 0.0000259399
+total gradient 0.0163947290742
+===> Epoch[35](1800/3203): Loss: 0.0000009537
+total gradient 0.00701140795554
+===> Epoch[35](1900/3203): Loss: 0.0001105309
+total gradient 0.0796270029708
+===> Epoch[35](2000/3203): Loss: 0.0006723881
+total gradient 0.132414056268
+===> Epoch[35](2100/3203): Loss: 0.0000003815
+total gradient 0.00700838018265
+===> Epoch[35](2200/3203): Loss: 0.0000029087
+total gradient 0.0070959632299
+===> Epoch[35](2300/3203): Loss: 0.0003685236
+total gradient 0.152519175787
+===> Epoch[35](2400/3203): Loss: 0.0000771523
+total gradient 0.0249491123376
+===> Epoch[35](2500/3203): Loss: 0.0000072002
+total gradient 0.00737052555546
+===> Epoch[35](2600/3203): Loss: 0.0000389099
+total gradient 0.0400968611664
+===> Epoch[35](2700/3203): Loss: 0.0000058174
+total gradient 0.00713167611414
+===> Epoch[35](2800/3203): Loss: 0.0008625031
+total gradient 0.206196310005
+===> Epoch[35](2900/3203): Loss: 0.0002345324
+total gradient 0.0968347563672
+===> Epoch[35](3000/3203): Loss: 0.0000589848
+total gradient 0.0299079704603
+===> Epoch[35](3100/3203): Loss: 0.0000681877
+total gradient 0.0225614149678
+===> Epoch[35](3200/3203): Loss: 0.0000011921
+total gradient 0.00701305976312
+
+Test set: Average loss: 2.4964, Accuracy: 6333/7950 (80%)
+
+Checkpoint saved to model/model_epoch_35.pth
+epoch = 36 lr = 1e-05
+===> Epoch[36](100/3203): Loss: 0.0010008335
+total gradient 0.186462852259
+===> Epoch[36](200/3203): Loss: 0.0001821041
+total gradient 0.0306890907029
+===> Epoch[36](300/3203): Loss: 0.0007681608
+total gradient 0.238447557131
+===> Epoch[36](400/3203): Loss: 0.0001104832
+total gradient 0.0386873316383
+===> Epoch[36](500/3203): Loss: 0.0000026226
+total gradient 0.00706884399471
+===> Epoch[36](600/3203): Loss: 0.0003983736
+total gradient 0.237704350285
+===> Epoch[36](700/3203): Loss: 0.0000104904
+total gradient 0.00735745539719
+===> Epoch[36](800/3203): Loss: 0.0000013351
+total gradient 0.00704113999335
+===> Epoch[36](900/3203): Loss: 0.0000692844
+total gradient 0.0275025258074
+===> Epoch[36](1000/3203): Loss: 0.0000365734
+total gradient 0.0155980815903
+===> Epoch[36](1100/3203): Loss: 0.0000081062
+total gradient 0.00745349416682
+===> Epoch[36](1200/3203): Loss: 0.0000000954
+total gradient 0.00700799842893
+===> Epoch[36](1300/3203): Loss: 0.0000122070
+total gradient 0.00810948379118
+===> Epoch[36](1400/3203): Loss: 0.0000344753
+total gradient 0.0147915967381
+===> Epoch[36](1500/3203): Loss: 0.0006492853
+total gradient 0.215115338934
+===> Epoch[36](1600/3203): Loss: 0.0004214287
+total gradient 0.171276748566
+===> Epoch[36](1700/3203): Loss: 0.0027431250
+total gradient 0.954677914911
+===> Epoch[36](1800/3203): Loss: 0.0000636578
+total gradient 0.0298895016196
+===> Epoch[36](1900/3203): Loss: 0.0000389576
+total gradient 0.011809468429
+===> Epoch[36](2000/3203): Loss: 0.0000033855
+total gradient 0.00722149349428
+===> Epoch[36](2100/3203): Loss: 0.0000185490
+total gradient 0.0120176105285
+===> Epoch[36](2200/3203): Loss: 0.0000225067
+total gradient 0.014819836869
+===> Epoch[36](2300/3203): Loss: 0.0000001431
+total gradient 0.00700805486937
+===> Epoch[36](2400/3203): Loss: 0.0000000954
+total gradient 0.00700796949757
+===> Epoch[36](2500/3203): Loss: 0.0000229359
+total gradient 0.0109289517074
+===> Epoch[36](2600/3203): Loss: 0.0000004292
+total gradient 0.00700989086883
+===> Epoch[36](2700/3203): Loss: 0.0001704216
+total gradient 0.0505179880362
+===> Epoch[36](2800/3203): Loss: 0.0000014782
+total gradient 0.00702809451588
+===> Epoch[36](2900/3203): Loss: 0.0000228882
+total gradient 0.0109639031259
+===> Epoch[36](3000/3203): Loss: 0.0000571489
+total gradient 0.0386189958842
+===> Epoch[36](3100/3203): Loss: 0.0000000000
+total gradient 0.00700794121219
+===> Epoch[36](3200/3203): Loss: 0.0000933170
+total gradient 0.0350897575917
+
+Test set: Average loss: 2.4813, Accuracy: 6304/7950 (79%)
+
+Checkpoint saved to model/model_epoch_36.pth
+epoch = 37 lr = 1e-05
+===> Epoch[37](100/3203): Loss: 0.0000002384
+total gradient 0.00700838854221
+===> Epoch[37](200/3203): Loss: 0.0014006138
+total gradient 0.271688738908
+===> Epoch[37](300/3203): Loss: 0.0007692814
+total gradient 0.166255562051
+===> Epoch[37](400/3203): Loss: 0.0020180463
+total gradient 0.646639997917
+===> Epoch[37](500/3203): Loss: 0.0000388145
+total gradient 0.0220483488969
+===> Epoch[37](600/3203): Loss: 0.0002273321
+total gradient 0.0551823887156
+===> Epoch[37](700/3203): Loss: 0.0000881434
+total gradient 0.0299709654023
+===> Epoch[37](800/3203): Loss: 0.0000006676
+total gradient 0.00702043921992
+===> Epoch[37](900/3203): Loss: 0.0000250340
+total gradient 0.00933890828684
+===> Epoch[37](1000/3203): Loss: 0.0025089025
+total gradient 0.55184522138
+===> Epoch[37](1100/3203): Loss: 0.0000013351
+total gradient 0.00701882294784
+===> Epoch[37](1200/3203): Loss: 0.0001139402
+total gradient 0.0210990467372
+===> Epoch[37](1300/3203): Loss: 0.0000136852
+total gradient 0.00852446012738
+===> Epoch[37](1400/3203): Loss: 0.0000033855
+total gradient 0.00705499658232
+===> Epoch[37](1500/3203): Loss: 0.0002004623
+total gradient 0.102726734679
+===> Epoch[37](1600/3203): Loss: 0.0000007153
+total gradient 0.00701262410361
+===> Epoch[37](1700/3203): Loss: 0.0003079653
+total gradient 0.161302010785
+===> Epoch[37](1800/3203): Loss: 0.0000009537
+total gradient 0.00701262174128
+===> Epoch[37](1900/3203): Loss: 0.0000826359
+total gradient 0.0326677661774
+===> Epoch[37](2000/3203): Loss: 0.0000399590
+total gradient 0.0131341803591
+===> Epoch[37](2100/3203): Loss: 0.0003576517
+total gradient 0.138227662532
+===> Epoch[37](2200/3203): Loss: 0.0000869036
+total gradient 0.0407515896128
+===> Epoch[37](2300/3203): Loss: 0.0000888824
+total gradient 0.0237621478211
+===> Epoch[37](2400/3203): Loss: 0.0000006199
+total gradient 0.00700864341539
+===> Epoch[37](2500/3203): Loss: 0.0001447678
+total gradient 0.0447648438781
+===> Epoch[37](2600/3203): Loss: 0.0000544071
+total gradient 0.0225129314682
+===> Epoch[37](2700/3203): Loss: 0.0000316620
+total gradient 0.0105396461655
+===> Epoch[37](2800/3203): Loss: 0.0001074553
+total gradient 0.0393902151615
+===> Epoch[37](2900/3203): Loss: 0.0000006676
+total gradient 0.0070133975825
+===> Epoch[37](3000/3203): Loss: 0.0001041174
+total gradient 0.0375520821833
+===> Epoch[37](3100/3203): Loss: 0.0000934124
+total gradient 0.0419680966343
+===> Epoch[37](3200/3203): Loss: 0.0000527859
+total gradient 0.0246494917341
+
+Test set: Average loss: 2.5107, Accuracy: 6321/7950 (80%)
+
+Checkpoint saved to model/model_epoch_37.pth
+epoch = 38 lr = 1e-05
+===> Epoch[38](100/3203): Loss: 0.0000000000
+total gradient 0.00700788219161
+===> Epoch[38](200/3203): Loss: 0.0002083540
+total gradient 0.0380549440437
+===> Epoch[38](300/3203): Loss: 0.0000550747
+total gradient 0.0296261399551
+===> Epoch[38](400/3203): Loss: 0.0002378702
+total gradient 0.0747367318816
+===> Epoch[38](500/3203): Loss: 0.0000015259
+total gradient 0.00704670560396
+===> Epoch[38](600/3203): Loss: 0.0000180721
+total gradient 0.00924348425278
+===> Epoch[38](700/3203): Loss: 0.0000050545
+total gradient 0.00784780099858
+===> Epoch[38](800/3203): Loss: 0.0006520748
+total gradient 0.420539470211
+===> Epoch[38](900/3203): Loss: 0.0000901222
+total gradient 0.0504528721872
+===> Epoch[38](1000/3203): Loss: 0.0000356197
+total gradient 0.0225730929817
+===> Epoch[38](1100/3203): Loss: 0.0000048161
+total gradient 0.00757043859951
+===> Epoch[38](1200/3203): Loss: 0.0004522800
+total gradient 0.192013299252
+===> Epoch[38](1300/3203): Loss: 0.0000811100
+total gradient 0.0178849148612
+===> Epoch[38](1400/3203): Loss: 0.0000379562
+total gradient 0.0154161469817
+===> Epoch[38](1500/3203): Loss: 0.0000000954
+total gradient 0.00700798715581
+===> Epoch[38](1600/3203): Loss: 0.0000100136
+total gradient 0.00846415135322
+===> Epoch[38](1700/3203): Loss: 0.0002300262
+total gradient 0.0960998499235
+===> Epoch[38](1800/3203): Loss: 0.0000000000
+total gradient 0.00700782159809
+===> Epoch[38](1900/3203): Loss: 0.0000000000
+total gradient 0.00700781396078
+===> Epoch[38](2000/3203): Loss: 0.0000030518
+total gradient 0.00707313923248
+===> Epoch[38](2100/3203): Loss: 0.0179913696
+total gradient 7.21472633895
+===> Epoch[38](2200/3203): Loss: 0.0000874996
+total gradient 0.0445492701901
+===> Epoch[38](2300/3203): Loss: 0.0003681183
+total gradient 0.163310566198
+===> Epoch[38](2400/3203): Loss: 0.0000000954
+total gradient 0.00700784070036
+===> Epoch[38](2500/3203): Loss: 0.0000135899
+total gradient 0.00891330766194
+===> Epoch[38](2600/3203): Loss: 0.0000469685
+total gradient 0.0206134680261
+===> Epoch[38](2700/3203): Loss: 0.0000452042
+total gradient 0.0231873505884
+===> Epoch[38](2800/3203): Loss: 0.0017562627
+total gradient 0.77330881111
+===> Epoch[38](2900/3203): Loss: 0.0000339508
+total gradient 0.0111672411849
+===> Epoch[38](3000/3203): Loss: 0.0004933596
+total gradient 0.133255855924
+===> Epoch[38](3100/3203): Loss: 0.0001314402
+total gradient 0.0631898281613
+===> Epoch[38](3200/3203): Loss: 0.0000869989
+total gradient 0.0181548569849
+
+Test set: Average loss: 2.4991, Accuracy: 6329/7950 (80%)
+
+Checkpoint saved to model/model_epoch_38.pth
+epoch = 39 lr = 1e-05
+===> Epoch[39](100/3203): Loss: 0.0000596046
+total gradient 0.0197503740157
+===> Epoch[39](200/3203): Loss: 0.0017871379
+total gradient 0.39230876521
+===> Epoch[39](300/3203): Loss: 0.0002272367
+total gradient 0.051740442096
+===> Epoch[39](400/3203): Loss: 0.0000038624
+total gradient 0.00716016790584
+===> Epoch[39](500/3203): Loss: 0.0000957012
+total gradient 0.022109776157
+===> Epoch[39](600/3203): Loss: 0.0000063419
+total gradient 0.00713511180614
+===> Epoch[39](700/3203): Loss: 0.0000000000
+total gradient 0.00700775756278
+===> Epoch[39](800/3203): Loss: 0.0000098705
+total gradient 0.00820268745647
+===> Epoch[39](900/3203): Loss: 0.0003412962
+total gradient 0.122933955427
+===> Epoch[39](1000/3203): Loss: 0.0000093460
+total gradient 0.00731905309945
+===> Epoch[39](1100/3203): Loss: 0.0002595663
+total gradient 0.0636010011877
+===> Epoch[39](1200/3203): Loss: 0.0000378132
+total gradient 0.0181026699396
+===> Epoch[39](1300/3203): Loss: 0.0000171661
+total gradient 0.00870766258661
+===> Epoch[39](1400/3203): Loss: 0.0000080109
+total gradient 0.0092152370425
+===> Epoch[39](1500/3203): Loss: 0.0000009060
+total gradient 0.00701442835273
+===> Epoch[39](1600/3203): Loss: 0.0033321262
+total gradient 1.87260471386
+===> Epoch[39](1700/3203): Loss: 0.0000000477
+total gradient 0.00700771467233
+===> Epoch[39](1800/3203): Loss: 0.0003947735
+total gradient 0.0870042871479
+===> Epoch[39](1900/3203): Loss: 0.0000603676
+total gradient 0.0271284641352
+===> Epoch[39](2000/3203): Loss: 0.0002043009
+total gradient 0.045925943577
+===> Epoch[39](2100/3203): Loss: 0.0003173828
+total gradient 0.062337728414
+===> Epoch[39](2200/3203): Loss: 0.0005379677
+total gradient 0.114431530675
+===> Epoch[39](2300/3203): Loss: 0.0003244161
+total gradient 0.0886421657816
+===> Epoch[39](2400/3203): Loss: 0.0001502275
+total gradient 0.0656902534124
+===> Epoch[39](2500/3203): Loss: 0.0000092506
+total gradient 0.00732542981431
+===> Epoch[39](2600/3203): Loss: 0.0000000000
+total gradient 0.00700770137033
+===> Epoch[39](2700/3203): Loss: 0.0012422085
+total gradient 0.796128737786
+===> Epoch[39](2800/3203): Loss: 0.0000024319
+total gradient 0.00704886939867
+===> Epoch[39](2900/3203): Loss: 0.0000005245
+total gradient 0.00701019222324
+===> Epoch[39](3000/3203): Loss: 0.0000635624
+total gradient 0.0367729272463
+===> Epoch[39](3100/3203): Loss: 0.0000030041
+total gradient 0.0070340146383
+===> Epoch[39](3200/3203): Loss: 0.0000008583
+total gradient 0.00701478615042
+
+Test set: Average loss: 2.4917, Accuracy: 6340/7950 (80%)
+
+Checkpoint saved to model/model_epoch_39.pth
+epoch = 40 lr = 1e-05
+===> Epoch[40](100/3203): Loss: 0.0000069141
+total gradient 0.00737697137065
+===> Epoch[40](200/3203): Loss: 0.0005183220
+total gradient 0.177807957161
+===> Epoch[40](300/3203): Loss: 0.0000084400
+total gradient 0.00812406634941
+===> Epoch[40](400/3203): Loss: 0.0000005245
+total gradient 0.0070082338708
+===> Epoch[40](500/3203): Loss: 0.0001536369
+total gradient 0.0564385801175
+===> Epoch[40](600/3203): Loss: 0.0000576019
+total gradient 0.0308388686338
+===> Epoch[40](700/3203): Loss: 0.0001105547
+total gradient 0.0570111241575
+===> Epoch[40](800/3203): Loss: 0.0000000477
+total gradient 0.00700769152006
+===> Epoch[40](900/3203): Loss: 0.0000073910
+total gradient 0.00742323165476
+===> Epoch[40](1000/3203): Loss: 0.0000034809
+total gradient 0.00707196824949
+===> Epoch[40](1100/3203): Loss: 0.0000063419
+total gradient 0.0071824015909
+===> Epoch[40](1200/3203): Loss: 0.0000048637
+total gradient 0.00736763446903
+===> Epoch[40](1300/3203): Loss: 0.0011085987
+total gradient 0.2246740532
+===> Epoch[40](1400/3203): Loss: 0.0000031948
+total gradient 0.00706617637824
+===> Epoch[40](1500/3203): Loss: 0.0000273705
+total gradient 0.0131788685123
+===> Epoch[40](1600/3203): Loss: 0.0000075340
+total gradient 0.00771622890646
+===> Epoch[40](1700/3203): Loss: 0.0000024796
+total gradient 0.0070371149123
+===> Epoch[40](1800/3203): Loss: 0.0002286673
+total gradient 0.0623947431032
+===> Epoch[40](1900/3203): Loss: 0.0000056744
+total gradient 0.00720045689567
+===> Epoch[40](2000/3203): Loss: 0.0002417803
+total gradient 0.0390056627882
+===> Epoch[40](2100/3203): Loss: 0.0000021458
+total gradient 0.00717597091143
+===> Epoch[40](2200/3203): Loss: 0.0036149858
+total gradient 1.86129572356
+===> Epoch[40](2300/3203): Loss: 0.0009631157
+total gradient 0.561531386423
+===> Epoch[40](2400/3203): Loss: 0.0000028610
+total gradient 0.00706721784607
+===> Epoch[40](2500/3203): Loss: 0.0001164913
+total gradient 0.0364083800624
+===> Epoch[40](2600/3203): Loss: 0.0000606537
+total gradient 0.0322537435766
+===> Epoch[40](2700/3203): Loss: 0.0000000954
+total gradient 0.00700758744311
+===> Epoch[40](2800/3203): Loss: 0.0000013351
+total gradient 0.00701991673003
+===> Epoch[40](2900/3203): Loss: 0.0000027657
+total gradient 0.00706247744746
+===> Epoch[40](3000/3203): Loss: 0.0005293131
+total gradient 0.131877414897
+===> Epoch[40](3100/3203): Loss: 0.0002785206
+total gradient 0.0809602423475
+===> Epoch[40](3200/3203): Loss: 0.0000000000
+total gradient 0.00700762470591
+
+Test set: Average loss: 2.5039, Accuracy: 6313/7950 (79%)
+
+Checkpoint saved to model/model_epoch_40.pth
+epoch = 41 lr = 1e-05
+===> Epoch[41](100/3203): Loss: 0.0000033379
+total gradient 0.00714151674556
+===> Epoch[41](200/3203): Loss: 0.0000000477
+total gradient 0.00700760073141
+===> Epoch[41](300/3203): Loss: 0.0000005245
+total gradient 0.00700905321173
+===> Epoch[41](400/3203): Loss: 0.0022930144
+total gradient 0.510110185607
+===> Epoch[41](500/3203): Loss: 0.0000350475
+total gradient 0.0135186618787
+===> Epoch[41](600/3203): Loss: 0.0000611544
+total gradient 0.0166979282473
+===> Epoch[41](700/3203): Loss: 0.0002135992
+total gradient 0.0404457108637
+===> Epoch[41](800/3203): Loss: 0.0001608849
+total gradient 0.122873848258
+===> Epoch[41](900/3203): Loss: 0.0000239372
+total gradient 0.010928379315
+===> Epoch[41](1000/3203): Loss: 0.0002147436
+total gradient 0.0675910819771
+===> Epoch[41](1100/3203): Loss: 0.0015149831
+total gradient 0.344357874255
+===> Epoch[41](1200/3203): Loss: 0.0000001907
+total gradient 0.00700751941787
+===> Epoch[41](1300/3203): Loss: 0.0000239372
+total gradient 0.0105067042743
+===> Epoch[41](1400/3203): Loss: 0.0002359152
+total gradient 0.196065148278
+===> Epoch[41](1500/3203): Loss: 0.0000000477
+total gradient 0.00700753855723
+===> Epoch[41](1600/3203): Loss: 0.0000039577
+total gradient 0.00721041066587
+===> Epoch[41](1700/3203): Loss: 0.0000295162
+total gradient 0.0114438336666
+===> Epoch[41](1800/3203): Loss: 0.0000047684
+total gradient 0.00711714922969
+===> Epoch[41](1900/3203): Loss: 0.0000072956
+total gradient 0.00727601463173
+===> Epoch[41](2000/3203): Loss: 0.0004158258
+total gradient 0.438423567946
+===> Epoch[41](2100/3203): Loss: 0.0000344038
+total gradient 0.0117139938154
+===> Epoch[41](2200/3203): Loss: 0.0000099182
+total gradient 0.00758043824147
+===> Epoch[41](2300/3203): Loss: 0.0004798174
+total gradient 0.141687610063
+===> Epoch[41](2400/3203): Loss: 0.0000088215
+total gradient 0.00795585462579
+===> Epoch[41](2500/3203): Loss: 0.0005892277
+total gradient 0.215071433878
+===> Epoch[41](2600/3203): Loss: 0.0002112865
+total gradient 0.0936545984801
+===> Epoch[41](2700/3203): Loss: 0.0000039101
+total gradient 0.00719801431352
+===> Epoch[41](2800/3203): Loss: 0.0009256840
+total gradient 0.827532101332
+===> Epoch[41](2900/3203): Loss: 0.0023801327
+total gradient 0.851119455963
+===> Epoch[41](3000/3203): Loss: 0.0000000000
+total gradient 0.00700753540793
+===> Epoch[41](3100/3203): Loss: 0.0000258923
+total gradient 0.0121958070089
+===> Epoch[41](3200/3203): Loss: 0.0000044346
+total gradient 0.00740359336083
+
+Test set: Average loss: 2.5112, Accuracy: 6325/7950 (80%)
+
+Checkpoint saved to model/model_epoch_41.pth
+epoch = 42 lr = 1e-05
+===> Epoch[42](100/3203): Loss: 0.0000450134
+total gradient 0.0210573133931
+===> Epoch[42](200/3203): Loss: 0.0000030041
+total gradient 0.00717185098225
+===> Epoch[42](300/3203): Loss: 0.0000062466
+total gradient 0.00737649955823
+===> Epoch[42](400/3203): Loss: 0.0000172138
+total gradient 0.012673493856
+===> Epoch[42](500/3203): Loss: 0.0000741005
+total gradient 0.0521684338217
+===> Epoch[42](600/3203): Loss: 0.0000253677
+total gradient 0.0102727961602
+===> Epoch[42](700/3203): Loss: 0.0000486374
+total gradient 0.0212096564208
+===> Epoch[42](800/3203): Loss: 0.0000177383
+total gradient 0.009372953356
+===> Epoch[42](900/3203): Loss: 0.0037738562
+total gradient 1.48949199471
+===> Epoch[42](1000/3203): Loss: 0.0000529766
+total gradient 0.0287212657317
+===> Epoch[42](1100/3203): Loss: 0.0000000000
+total gradient 0.00700751999075
+===> Epoch[42](1200/3203): Loss: 0.0000163555
+total gradient 0.0102302986842
+===> Epoch[42](1300/3203): Loss: 0.0019135833
+total gradient 0.78472631028
+===> Epoch[42](1400/3203): Loss: 0.0000062466
+total gradient 0.00723675450533
+===> Epoch[42](1500/3203): Loss: 0.0000971556
+total gradient 0.0484366350349
+===> Epoch[42](1600/3203): Loss: 0.0000257969
+total gradient 0.0123756674102
+===> Epoch[42](1700/3203): Loss: 0.0000003338
+total gradient 0.00700761349594
+===> Epoch[42](1800/3203): Loss: 0.0000002861
+total gradient 0.00700816013223
+===> Epoch[42](1900/3203): Loss: 0.0001137972
+total gradient 0.0605239204232
+===> Epoch[42](2000/3203): Loss: 0.0000759125
+total gradient 0.0254899728938
+===> Epoch[42](2100/3203): Loss: 0.0002789259
+total gradient 0.0891687095407
+===> Epoch[42](2200/3203): Loss: 0.0005758524
+total gradient 0.14118095601
+===> Epoch[42](2300/3203): Loss: 0.0000576496
+total gradient 0.0298983023898
+===> Epoch[42](2400/3203): Loss: 0.0001775980
+total gradient 0.0392052776616
+===> Epoch[42](2500/3203): Loss: 0.0000000477
+total gradient 0.00700745840004
+===> Epoch[42](2600/3203): Loss: 0.0000092030
+total gradient 0.00829626705167
+===> Epoch[42](2700/3203): Loss: 0.0000039577
+total gradient 0.0070869910562
+===> Epoch[42](2800/3203): Loss: 0.0002996683
+total gradient 0.0912596965417
+===> Epoch[42](2900/3203): Loss: 0.0000854492
+total gradient 0.0325874412298
+===> Epoch[42](3000/3203): Loss: 0.0000336647
+total gradient 0.0229158978516
+===> Epoch[42](3100/3203): Loss: 0.0000015259
+total gradient 0.0070675665709
+===> Epoch[42](3200/3203): Loss: 0.0000017643
+total gradient 0.00701529934449
+
+Test set: Average loss: 2.4968, Accuracy: 6329/7950 (80%)
+
+Checkpoint saved to model/model_epoch_42.pth
+epoch = 43 lr = 1e-05
+===> Epoch[43](100/3203): Loss: 0.0000005245
+total gradient 0.00701565017181
+===> Epoch[43](200/3203): Loss: 0.0000232697
+total gradient 0.0201698851456
+===> Epoch[43](300/3203): Loss: 0.0000916243
+total gradient 0.0259396850735
+===> Epoch[43](400/3203): Loss: 0.0000000477
+total gradient 0.00700745895977
+===> Epoch[43](500/3203): Loss: 0.0000003338
+total gradient 0.0070092281718
+===> Epoch[43](600/3203): Loss: 0.0279650278
+total gradient 9.99999979157
+===> Epoch[43](700/3203): Loss: 0.0000024796
+total gradient 0.00704404681308
+===> Epoch[43](800/3203): Loss: 0.0000030041
+total gradient 0.00713556297361
+===> Epoch[43](900/3203): Loss: 0.0000008106
+total gradient 0.00702895610143
+===> Epoch[43](1000/3203): Loss: 0.0000017643
+total gradient 0.0070470595551
+===> Epoch[43](1100/3203): Loss: 0.0000362873
+total gradient 0.0198644629079
+===> Epoch[43](1200/3203): Loss: 0.0000060558
+total gradient 0.00740307262319
+===> Epoch[43](1300/3203): Loss: 0.0001683712
+total gradient 0.082822981036
+===> Epoch[43](1400/3203): Loss: 0.0000010967
+total gradient 0.00701335125835
+===> Epoch[43](1500/3203): Loss: 0.0000469685
+total gradient 0.0152694487273
+===> Epoch[43](1600/3203): Loss: 0.0000395775
+total gradient 0.00970292816096
+===> Epoch[43](1700/3203): Loss: 0.0001022100
+total gradient 0.0376758233222
+===> Epoch[43](1800/3203): Loss: 0.0000007153
+total gradient 0.00702763743344
+===> Epoch[43](1900/3203): Loss: 0.0000002384
+total gradient 0.00700815844476
+===> Epoch[43](2000/3203): Loss: 0.0003194094
+total gradient 0.0773447630829
+===> Epoch[43](2100/3203): Loss: 0.0000037193
+total gradient 0.00718213316383
+===> Epoch[43](2200/3203): Loss: 0.0000219822
+total gradient 0.0112716243145
+===> Epoch[43](2300/3203): Loss: 0.0000263691
+total gradient 0.0134012728419
+===> Epoch[43](2400/3203): Loss: 0.0000038624
+total gradient 0.00736026899999
+===> Epoch[43](2500/3203): Loss: 0.0001030445
+total gradient 0.0564047233807
+===> Epoch[43](2600/3203): Loss: 0.0016240596
+total gradient 0.482918274139
+===> Epoch[43](2700/3203): Loss: 0.0050365329
+total gradient 1.31157141024
+===> Epoch[43](2800/3203): Loss: 0.0000288963
+total gradient 0.0116227181783
+===> Epoch[43](2900/3203): Loss: 0.0000052929
+total gradient 0.00731677228446
+===> Epoch[43](3000/3203): Loss: 0.0000000954
+total gradient 0.00700741277789
+===> Epoch[43](3100/3203): Loss: 0.0000108242
+total gradient 0.0076218494476
+===> Epoch[43](3200/3203): Loss: 0.0002616167
+total gradient 0.157984934394
+
+Test set: Average loss: 2.5114, Accuracy: 6327/7950 (80%)
+
+Checkpoint saved to model/model_epoch_43.pth
+epoch = 44 lr = 1e-05
+===> Epoch[44](100/3203): Loss: 0.0004823685
+total gradient 0.299499365068
+===> Epoch[44](200/3203): Loss: 0.0000231266
+total gradient 0.0136670865412
+===> Epoch[44](300/3203): Loss: 0.0000397921
+total gradient 0.020519834573
+===> Epoch[44](400/3203): Loss: 0.0000005722
+total gradient 0.00701147019847
+===> Epoch[44](500/3203): Loss: 0.0000080585
+total gradient 0.00753152251203
+===> Epoch[44](600/3203): Loss: 0.0000013828
+total gradient 0.00703135878207
+===> Epoch[44](700/3203): Loss: 0.0000069141
+total gradient 0.00778467227605
+===> Epoch[44](800/3203): Loss: 0.0003464460
+total gradient 0.201831369258
+===> Epoch[44](900/3203): Loss: 0.0001907825
+total gradient 0.0782919596885
+===> Epoch[44](1000/3203): Loss: 0.0000150204
+total gradient 0.0131036311318
+===> Epoch[44](1100/3203): Loss: 0.0000630140
+total gradient 0.0173393487791
+===> Epoch[44](1200/3203): Loss: 0.0001807213
+total gradient 0.117597427292
+===> Epoch[44](1300/3203): Loss: 0.0000036240
+total gradient 0.00761925917598
+===> Epoch[44](1400/3203): Loss: 0.0000276566
+total gradient 0.018978875766
+===> Epoch[44](1500/3203): Loss: 0.0002156734
+total gradient 0.0657813910359
+===> Epoch[44](1600/3203): Loss: 0.0000000477
+total gradient 0.00700734145336
+===> Epoch[44](1700/3203): Loss: 0.0007772684
+total gradient 0.201311816258
+===> Epoch[44](1800/3203): Loss: 0.0000352859
+total gradient 0.0247549489351
+===> Epoch[44](1900/3203): Loss: 0.0001626968
+total gradient 0.0675554132971
+===> Epoch[44](2000/3203): Loss: 0.0001355648
+total gradient 0.0321904038104
+===> Epoch[44](2100/3203): Loss: 0.0000019073
+total gradient 0.0070468396112
+===> Epoch[44](2200/3203): Loss: 0.0008481980
+total gradient 0.350550054342
+===> Epoch[44](2300/3203): Loss: 0.0001186848
+total gradient 0.0591052008909
+===> Epoch[44](2400/3203): Loss: 0.0000112534
+total gradient 0.00757437014876
+===> Epoch[44](2500/3203): Loss: 0.0000000000
+total gradient 0.00700730659668
+===> Epoch[44](2600/3203): Loss: 0.0000018597
+total gradient 0.00715410727713
+===> Epoch[44](2700/3203): Loss: 0.0000848770
+total gradient 0.0432704317689
+===> Epoch[44](2800/3203): Loss: 0.0000241280
+total gradient 0.0109374026324
+===> Epoch[44](2900/3203): Loss: 0.0000000000
+total gradient 0.00700730428519
+===> Epoch[44](3000/3203): Loss: 0.0000008106
+total gradient 0.00701305735939
+===> Epoch[44](3100/3203): Loss: 0.0000004292
+total gradient 0.00700789312387
+===> Epoch[44](3200/3203): Loss: 0.0003410339
+total gradient 0.187621102947
+
+Test set: Average loss: 2.5130, Accuracy: 6309/7950 (79%)
+
+Checkpoint saved to model/model_epoch_44.pth
+epoch = 45 lr = 1e-05
+===> Epoch[45](100/3203): Loss: 0.0000002861
+total gradient 0.00700761017505
+===> Epoch[45](200/3203): Loss: 0.0115067605
+total gradient 1.96056824674
+===> Epoch[45](300/3203): Loss: 0.0000017643
+total gradient 0.00703375025724
+===> Epoch[45](400/3203): Loss: 0.0000155449
+total gradient 0.00806673433736
+===> Epoch[45](500/3203): Loss: 0.0001517057
+total gradient 0.0439330323529
+===> Epoch[45](600/3203): Loss: 0.0000212193
+total gradient 0.0111264245241
+===> Epoch[45](700/3203): Loss: 0.0002902508
+total gradient 0.119710190226
+===> Epoch[45](800/3203): Loss: 0.0000049114
+total gradient 0.00745855779012
+===> Epoch[45](900/3203): Loss: 0.0000051975
+total gradient 0.00750419308872
+===> Epoch[45](1000/3203): Loss: 0.0001042128
+total gradient 0.10248417739
+===> Epoch[45](1100/3203): Loss: 0.0000194550
+total gradient 0.0127154060251
+===> Epoch[45](1200/3203): Loss: 0.0005041361
+total gradient 0.11268009488
+===> Epoch[45](1300/3203): Loss: 0.0000269413
+total gradient 0.0152663031043
+===> Epoch[45](1400/3203): Loss: 0.0000056267
+total gradient 0.00744780265785
+===> Epoch[45](1500/3203): Loss: 0.0000494003
+total gradient 0.0266913300468
+===> Epoch[45](1600/3203): Loss: 0.0000038624
+total gradient 0.00721292046476
+===> Epoch[45](1700/3203): Loss: 0.0001023769
+total gradient 0.041062609397
+===> Epoch[45](1800/3203): Loss: 0.0000010490
+total gradient 0.00701682866374
+===> Epoch[45](1900/3203): Loss: 0.0023076653
+total gradient 0.555233183151
+===> Epoch[45](2000/3203): Loss: 0.0000002861
+total gradient 0.00700970567083
+===> Epoch[45](2100/3203): Loss: 0.0000530005
+total gradient 0.0175970672889
+===> Epoch[45](2200/3203): Loss: 0.0000327587
+total gradient 0.00951243064386
+===> Epoch[45](2300/3203): Loss: 0.0000926256
+total gradient 0.0343320462286
+===> Epoch[45](2400/3203): Loss: 0.0000436544
+total gradient 0.0123410555109
+===> Epoch[45](2500/3203): Loss: 0.0000003338
+total gradient 0.00700909497019
+===> Epoch[45](2600/3203): Loss: 0.0000644684
+total gradient 0.026748012443
+===> Epoch[45](2700/3203): Loss: 0.0000406742
+total gradient 0.0178097015346
+===> Epoch[45](2800/3203): Loss: 0.0000188351
+total gradient 0.0110158296302
+===> Epoch[45](2900/3203): Loss: 0.0000000000
+total gradient 0.00700722252713
+===> Epoch[45](3000/3203): Loss: 0.0000082970
+total gradient 0.00846417482445
+===> Epoch[45](3100/3203): Loss: 0.0000000954
+total gradient 0.00700716197959
+===> Epoch[45](3200/3203): Loss: 0.0002156019
+total gradient 0.0760965228903
+
+Test set: Average loss: 2.5459, Accuracy: 6315/7950 (79%)
+
+Checkpoint saved to model/model_epoch_45.pth
+epoch = 46 lr = 1e-06
+===> Epoch[46](100/3203): Loss: 0.0042985203
+total gradient 0.848152030671
+===> Epoch[46](200/3203): Loss: 0.0009130716
+total gradient 0.300122598861
+===> Epoch[46](300/3203): Loss: 0.0000021935
+total gradient 0.00707727456429
+===> Epoch[46](400/3203): Loss: 0.0007516384
+total gradient 0.2527483415
+===> Epoch[46](500/3203): Loss: 0.0001146316
+total gradient 0.0204100221403
+===> Epoch[46](600/3203): Loss: 0.0002586126
+total gradient 0.114411199872
+===> Epoch[46](700/3203): Loss: 0.0000155926
+total gradient 0.0156814344966
+===> Epoch[46](800/3203): Loss: 0.0000017166
+total gradient 0.00707912156344
+===> Epoch[46](900/3203): Loss: 0.0000689268
+total gradient 0.0325538130169
+===> Epoch[46](1000/3203): Loss: 0.0000005722
+total gradient 0.00700829109674
+===> Epoch[46](1100/3203): Loss: 0.0022679330
+total gradient 1.31045134459
+===> Epoch[46](1200/3203): Loss: 0.0000061989
+total gradient 0.00724671380751
+===> Epoch[46](1300/3203): Loss: 0.0001005411
+total gradient 0.0268812821433
+===> Epoch[46](1400/3203): Loss: 0.0000439167
+total gradient 0.0190939535538
+===> Epoch[46](1500/3203): Loss: 0.0000032425
+total gradient 0.00704851538495
+===> Epoch[46](1600/3203): Loss: 0.0008152247
+total gradient 0.210605019451
+===> Epoch[46](1700/3203): Loss: 0.0001126528
+total gradient 0.0579548326756
+===> Epoch[46](1800/3203): Loss: 0.0000084877
+total gradient 0.00850458345019
+===> Epoch[46](1900/3203): Loss: 0.0001527786
+total gradient 0.0607810891306
+===> Epoch[46](2000/3203): Loss: 0.0000066757
+total gradient 0.00737311145562
+===> Epoch[46](2100/3203): Loss: 0.0001773119
+total gradient 0.072702113051
+===> Epoch[46](2200/3203): Loss: 0.0016631603
+total gradient 1.11952436732
+===> Epoch[46](2300/3203): Loss: 0.0000385761
+total gradient 0.0109268232326
+===> Epoch[46](2400/3203): Loss: 0.0001351833
+total gradient 0.0541676414916
+===> Epoch[46](2500/3203): Loss: 0.0000853777
+total gradient 0.0199515087542
+===> Epoch[46](2600/3203): Loss: 0.0002346516
+total gradient 0.0811420334029
+===> Epoch[46](2700/3203): Loss: 0.0025956153
+total gradient 1.09015780169
+===> Epoch[46](2800/3203): Loss: 0.0000437737
+total gradient 0.0196236772476
+===> Epoch[46](2900/3203): Loss: 0.0000615120
+total gradient 0.01897278643
+===> Epoch[46](3000/3203): Loss: 0.0000015259
+total gradient 0.00705305650398
+===> Epoch[46](3100/3203): Loss: 0.0000020981
+total gradient 0.00703086143409
+===> Epoch[46](3200/3203): Loss: 0.0000010490
+total gradient 0.00701033195617
+
+Test set: Average loss: 2.5051, Accuracy: 6312/7950 (79%)
+
+Checkpoint saved to model/model_epoch_46.pth
+epoch = 47 lr = 1e-06
+===> Epoch[47](100/3203): Loss: 0.0005127430
+total gradient 0.215118318851
+===> Epoch[47](200/3203): Loss: 0.0000278950
+total gradient 0.0116312704348
+===> Epoch[47](300/3203): Loss: 0.0001361608
+total gradient 0.0417360334261
+===> Epoch[47](400/3203): Loss: 0.0000843048
+total gradient 0.0197125762478
+===> Epoch[47](500/3203): Loss: 0.0003933191
+total gradient 0.0899019079259
+===> Epoch[47](600/3203): Loss: 0.0001147270
+total gradient 0.0392392251287
+===> Epoch[47](700/3203): Loss: 0.0005910873
+total gradient 0.204823938953
+===> Epoch[47](800/3203): Loss: 0.0000095844
+total gradient 0.00857149014361
+===> Epoch[47](900/3203): Loss: 0.0000016689
+total gradient 0.00707597463843
+===> Epoch[47](1000/3203): Loss: 0.0000251293
+total gradient 0.00959651776022
+===> Epoch[47](1100/3203): Loss: 0.0001100063
+total gradient 0.0293268771007
+===> Epoch[47](1200/3203): Loss: 0.0007481814
+total gradient 0.231489019586
+===> Epoch[47](1300/3203): Loss: 0.0000007153
+total gradient 0.00701357060456
+===> Epoch[47](1400/3203): Loss: 0.0000285149
+total gradient 0.0149976444567
+===> Epoch[47](1500/3203): Loss: 0.0364706293
+total gradient 5.21763855994
+===> Epoch[47](1600/3203): Loss: 0.0025206327
+total gradient 0.874436055482
+===> Epoch[47](1700/3203): Loss: 0.0018888951
+total gradient 0.427349300086
+===> Epoch[47](1800/3203): Loss: 0.0000104427
+total gradient 0.00796650925155
+===> Epoch[47](1900/3203): Loss: 0.0001938343
+total gradient 0.12207276742
+===> Epoch[47](2000/3203): Loss: 0.0000050068
+total gradient 0.00727876822825
+===> Epoch[47](2100/3203): Loss: 0.0000327587
+total gradient 0.0162499513298
+===> Epoch[47](2200/3203): Loss: 0.0000564337
+total gradient 0.0179218070162
+===> Epoch[47](2300/3203): Loss: 0.0000082970
+total gradient 0.00976611215885
+===> Epoch[47](2400/3203): Loss: 0.0000044346
+total gradient 0.00717191765277
+===> Epoch[47](2500/3203): Loss: 0.0000012875
+total gradient 0.00701598079731
+===> Epoch[47](2600/3203): Loss: 0.0000503778
+total gradient 0.0365917784246
+===> Epoch[47](2700/3203): Loss: 0.0006479740
+total gradient 0.33365615444
+===> Epoch[47](2800/3203): Loss: 0.0002330303
+total gradient 0.107412935125
+===> Epoch[47](2900/3203): Loss: 0.0000021458
+total gradient 0.00711367042194
+===> Epoch[47](3000/3203): Loss: 0.0000507116
+total gradient 0.0383832307465
+===> Epoch[47](3100/3203): Loss: 0.0000050068
+total gradient 0.00732608295161
+===> Epoch[47](3200/3203): Loss: 0.0000003338
+total gradient 0.00700706454475
+
+Test set: Average loss: 2.5267, Accuracy: 6318/7950 (79%)
+
+Checkpoint saved to model/model_epoch_47.pth
+epoch = 48 lr = 1e-06
+===> Epoch[48](100/3203): Loss: 0.0000334740
+total gradient 0.0250637920781
+===> Epoch[48](200/3203): Loss: 0.0000007153
+total gradient 0.0070203466503
+===> Epoch[48](300/3203): Loss: 0.0000005245
+total gradient 0.00700901525176
+===> Epoch[48](400/3203): Loss: 0.0000007153
+total gradient 0.00701207338257
+===> Epoch[48](500/3203): Loss: 0.0004873514
+total gradient 0.199760896285
+===> Epoch[48](600/3203): Loss: 0.0002544642
+total gradient 0.151419371071
+===> Epoch[48](700/3203): Loss: 0.0000457287
+total gradient 0.0224802444432
+===> Epoch[48](800/3203): Loss: 0.0000128269
+total gradient 0.00870618933478
+===> Epoch[48](900/3203): Loss: 0.0000542164
+total gradient 0.0166044471048
+===> Epoch[48](1000/3203): Loss: 0.0001397371
+total gradient 0.0500458166558
+===> Epoch[48](1100/3203): Loss: 0.0225944463
+total gradient 9.29378319345
+===> Epoch[48](1200/3203): Loss: 0.0023847818
+total gradient 1.47119160773
+===> Epoch[48](1300/3203): Loss: 0.0005209685
+total gradient 0.204236866033
+===> Epoch[48](1400/3203): Loss: 0.0000238895
+total gradient 0.00853558153804
+===> Epoch[48](1500/3203): Loss: 0.0000117779
+total gradient 0.00815205178746
+===> Epoch[48](1600/3203): Loss: 0.0000106335
+total gradient 0.00921098610679
+===> Epoch[48](1700/3203): Loss: 0.0007073164
+total gradient 0.282128487044
+===> Epoch[48](1800/3203): Loss: 0.0000009060
+total gradient 0.00701289178733
+===> Epoch[48](1900/3203): Loss: 0.0000435352
+total gradient 0.0443948990007
+===> Epoch[48](2000/3203): Loss: 0.0000010967
+total gradient 0.00701710670576
+===> Epoch[48](2100/3203): Loss: 0.0000003338
+total gradient 0.00700813083
+===> Epoch[48](2200/3203): Loss: 0.0001118898
+total gradient 0.0671831203229
+===> Epoch[48](2300/3203): Loss: 0.0000085354
+total gradient 0.00755054384884
+===> Epoch[48](2400/3203): Loss: 0.0000763893
+total gradient 0.0425621778199
+===> Epoch[48](2500/3203): Loss: 0.0005650520
+total gradient 0.196508775728
+===> Epoch[48](2600/3203): Loss: 0.0000438690
+total gradient 0.0145539019
+===> Epoch[48](2700/3203): Loss: 0.0000000954
+total gradient 0.00700714523176
+===> Epoch[48](2800/3203): Loss: 0.0000091076
+total gradient 0.00888639427694
+===> Epoch[48](2900/3203): Loss: 0.0001842976
+total gradient 0.0494549229303
+===> Epoch[48](3000/3203): Loss: 0.0000056744
+total gradient 0.00721106795581
+===> Epoch[48](3100/3203): Loss: 0.0002396822
+total gradient 0.271134318103
+===> Epoch[48](3200/3203): Loss: 0.0000060558
+total gradient 0.00771086569743
+
+Test set: Average loss: 2.5434, Accuracy: 6303/7950 (79%)
+
+Checkpoint saved to model/model_epoch_48.pth
+epoch = 49 lr = 1e-06
+===> Epoch[49](100/3203): Loss: 0.0000025272
+total gradient 0.00727445772671
+===> Epoch[49](200/3203): Loss: 0.0000027657
+total gradient 0.00704834170409
+===> Epoch[49](300/3203): Loss: 0.0000020504
+total gradient 0.00703441411872
+===> Epoch[49](400/3203): Loss: 0.0000773907
+total gradient 0.0201017330519
+===> Epoch[49](500/3203): Loss: 0.0003708601
+total gradient 0.127300530552
+===> Epoch[49](600/3203): Loss: 0.0000000954
+total gradient 0.00700715676113
+===> Epoch[49](700/3203): Loss: 0.0001742363
+total gradient 0.146631874127
+===> Epoch[49](800/3203): Loss: 0.0000937462
+total gradient 0.0284046108714
+===> Epoch[49](900/3203): Loss: 0.0000099182
+total gradient 0.00774991517854
+===> Epoch[49](1000/3203): Loss: 0.0000000477
+total gradient 0.00700712324817
+===> Epoch[49](1100/3203): Loss: 0.0000230789
+total gradient 0.0111160750045
+===> Epoch[49](1200/3203): Loss: 0.0000240803
+total gradient 0.0110537145985
+===> Epoch[49](1300/3203): Loss: 0.0003058672
+total gradient 0.0594876769263
+===> Epoch[49](1400/3203): Loss: 0.0000046730
+total gradient 0.00709883200567
+===> Epoch[49](1500/3203): Loss: 0.0000071526
+total gradient 0.00734719636223
+===> Epoch[49](1600/3203): Loss: 0.0000161648
+total gradient 0.0104612363347
+===> Epoch[49](1700/3203): Loss: 0.0000639915
+total gradient 0.0125325981644
+===> Epoch[49](1800/3203): Loss: 0.0003242731
+total gradient 0.0925241146456
+===> Epoch[49](1900/3203): Loss: 0.0000229836
+total gradient 0.00946607294125
+===> Epoch[49](2000/3203): Loss: 0.0001030445
+total gradient 0.0186798016174
+===> Epoch[49](2100/3203): Loss: 0.0000610590
+total gradient 0.0242016846649
+===> Epoch[49](2200/3203): Loss: 0.0000442505
+total gradient 0.0161614937444
+===> Epoch[49](2300/3203): Loss: 0.0002701998
+total gradient 0.0831691531421
+===> Epoch[49](2400/3203): Loss: 0.0000017166
+total gradient 0.00702903215233
+===> Epoch[49](2500/3203): Loss: 0.0000004768
+total gradient 0.00700827092367
+===> Epoch[49](2600/3203): Loss: 0.0000018120
+total gradient 0.00702287365234
+===> Epoch[49](2700/3203): Loss: 0.0000202656
+total gradient 0.00950485810559
+===> Epoch[49](2800/3203): Loss: 0.0000023365
+total gradient 0.00702950759693
+===> Epoch[49](2900/3203): Loss: 0.0000648022
+total gradient 0.0501934223829
+===> Epoch[49](3000/3203): Loss: 0.0000105381
+total gradient 0.00816891085939
+===> Epoch[49](3100/3203): Loss: 0.0000092983
+total gradient 0.00794668666805
+===> Epoch[49](3200/3203): Loss: 0.0073206425
+total gradient 2.55260943547
+
+Test set: Average loss: 2.5191, Accuracy: 6332/7950 (80%)
+
+Checkpoint saved to model/model_epoch_49.pth
+epoch = 50 lr = 1e-06
+===> Epoch[50](100/3203): Loss: 0.0000020504
+total gradient 0.00704589122676
+===> Epoch[50](200/3203): Loss: 0.0000501156
+total gradient 0.0293636642607
+===> Epoch[50](300/3203): Loss: 0.0000254631
+total gradient 0.0118348140494
+===> Epoch[50](400/3203): Loss: 0.0000118732
+total gradient 0.0122059785985
+===> Epoch[50](500/3203): Loss: 0.0005187750
+total gradient 0.12579594226
+===> Epoch[50](600/3203): Loss: 0.0000000954
+total gradient 0.00700760642558
+===> Epoch[50](700/3203): Loss: 0.0016611814
+total gradient 0.309453952986
+===> Epoch[50](800/3203): Loss: 0.0000000000
+total gradient 0.00700717424925
+===> Epoch[50](900/3203): Loss: 0.0000386238
+total gradient 0.0232365401639
+===> Epoch[50](1000/3203): Loss: 0.0043554902
+total gradient 1.30403482601
+===> Epoch[50](1100/3203): Loss: 0.0000156879
+total gradient 0.0137446878219
+===> Epoch[50](1200/3203): Loss: 0.0000005245
+total gradient 0.00700946128231
+===> Epoch[50](1300/3203): Loss: 0.0000000000
+total gradient 0.00700718446559
+===> Epoch[50](1400/3203): Loss: 0.0008390188
+total gradient 0.328779519823
+===> Epoch[50](1500/3203): Loss: 0.0000010014
+total gradient 0.0070721874899
+===> Epoch[50](1600/3203): Loss: 0.0000477314
+total gradient 0.0142669096803
+===> Epoch[50](1700/3203): Loss: 0.0000797272
+total gradient 0.0230444048426
+===> Epoch[50](1800/3203): Loss: 0.0000130653
+total gradient 0.00955976306085
+===> Epoch[50](1900/3203): Loss: 0.0000325203
+total gradient 0.010651960105
+===> Epoch[50](2000/3203): Loss: 0.0000293255
+total gradient 0.0159660043026
+===> Epoch[50](2100/3203): Loss: 0.0000511169
+total gradient 0.0440955295569
+===> Epoch[50](2200/3203): Loss: 0.0000070572
+total gradient 0.00758462951613
+===> Epoch[50](2300/3203): Loss: 0.0000007629
+total gradient 0.0070108745189
+===> Epoch[50](2400/3203): Loss: 0.0000061035
+total gradient 0.00721367859876
+===> Epoch[50](2500/3203): Loss: 0.0000000477
+total gradient 0.00700718418292
+===> Epoch[50](2600/3203): Loss: 0.0000078201
+total gradient 0.00818915442276
+===> Epoch[50](2700/3203): Loss: 0.0002573252
+total gradient 0.112972090289
+===> Epoch[50](2800/3203): Loss: 0.0002423286
+total gradient 0.13084399282
+===> Epoch[50](2900/3203): Loss: 0.0000003338
+total gradient 0.00700730982646
+===> Epoch[50](3000/3203): Loss: 0.0002613544
+total gradient 0.100781904932
+===> Epoch[50](3100/3203): Loss: 0.0000000000
+total gradient 0.00700721959483
+===> Epoch[50](3200/3203): Loss: 0.0011475564
+total gradient 0.593878526487
+
+Test set: Average loss: 2.5219, Accuracy: 6323/7950 (80%)
+
+Checkpoint saved to model/model_epoch_50.pth
+
